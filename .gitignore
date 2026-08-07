@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+~$*
+Thumbs.db
+.DS_Store
+qa/
+render/
+pages/
+contact_sheets/
+node_modules/

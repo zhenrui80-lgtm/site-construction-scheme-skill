@@ -1,0 +1,1338 @@
+﻿{
+    "schema_version":  1,
+    "created_at":  "2026-08-07T02:27:06.6402451Z",
+    "copied_files":  159,
+    "duplicate_sources":  5,
+    "missing_sources":  2,
+    "total_copied_bytes":  227983037,
+    "records":  [
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-05\\热轧厂操控中心景观提升项目(1).xlsx",
+                        "archive_path":  "attachments/01-hotrolling-landscape/热轧厂操控中心景观提升项目(1).xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "802b58d95bb88ccfc7c44dcb2563165f18e7bbf99b52ca53b3a51fd56353accd",
+                        "size_bytes":  65790
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-05\\2026.4.7 热轧厂操控中心景观提升项目施工图CAD+PDF(1).rar",
+                        "archive_path":  "attachments/01-hotrolling-landscape/2026.4.7 热轧厂操控中心景观提升项目施工图CAD+PDF(1).rar",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "91b6f3b5dd44ec0db1d72c0e192d1eb4d2bd6a0d9d5b551910430bd5d72305bd",
+                        "size_bytes":  59846807
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\开工\\炼铁厂\\干灰仓\\终版炼铁厂原料分厂均质化料场新增干灰仓组织设计.wps",
+                        "archive_path":  "attachments/02-reference-template/终版炼铁厂原料分厂均质化料场新增干灰仓组织设计.wps",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "08b50e43f23bae6fab8da3ab01174a59846f0fcf3132e0499977c1d614d88517",
+                        "size_bytes":  2125601
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-06\\北湖、工业港介质管道及加药区域防腐隐患整工程量清单(1).xlsx",
+                        "archive_path":  "attachments/03-beihu-corrosion/北湖、工业港介质管道及加药区域防腐隐患整工程量清单(1).xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "9a976c27b4ba98b63db030ad4d3e308ab691b01fe957c04283679f0b2f22aa52",
+                        "size_bytes":  30989
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-05\\武钢日铁19号天车检修直爬梯更换施工方案.docx",
+                        "archive_path":  "attachments/04-wugang-wiring/武钢日铁19号天车检修直爬梯更换施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b43af372f9cbcff5eb18065bb128eb957479be554d79222242f95c449f608815",
+                        "size_bytes":  814214
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\temp\\RWTemp\\2026-06\\2497468b94aa54efb3b2181acf80848c\\a3b50830edf29f32b8f7cf5a0b13cd21.jpg",
+                        "archive_path":  "attachments/04-wugang-wiring/a3b50830edf29f32b8f7cf5a0b13cd21.jpg",
+                        "status":  "missing",
+                        "duplicate_of":  null,
+                        "sha256":  null,
+                        "size_bytes":  0
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\temp\\RWTemp\\2026-06\\2497468b94aa54efb3b2181acf80848c\\43f5afc8f2f0fd1277f2548e64484ec1.jpg",
+                        "archive_path":  "attachments/04-wugang-wiring/43f5afc8f2f0fd1277f2548e64484ec1.jpg",
+                        "status":  "missing",
+                        "duplicate_of":  null,
+                        "sha256":  null,
+                        "size_bytes":  0
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-06\\工程量清单-焦一作业区废气收集系统整改及环境整治(1).xlsx",
+                        "archive_path":  "attachments/05-jiaoyi-exhaust/工程量清单-焦一作业区废气收集系统整改及环境整治(1).xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3a5a018a37b45162b5954d54ce02b4f07c886a32e46a1666a1ef37f9cb7db34f",
+                        "size_bytes":  44588
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\条材厂型材分厂厂房楼梯栏杆隐患整治施工方案_.docx",
+                        "archive_path":  "attachments/06-tiaocai-template/条材厂型材分厂厂房楼梯栏杆隐患整治施工方案_.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "c0434ec87bd7455f1cd9ed328fe702d50798ce21696a517984c930fe6a0ae70c",
+                        "size_bytes":  3832230
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-07\\（实事工程）质检中心食堂气改电（清单）0617(2).xlsx",
+                        "archive_path":  "attachments/07-canteen-gas-to-electric/（实事工程）质检中心食堂气改电（清单）0617(2).xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2e08781ed0ed686e0d2b919f0d42610d5bebf6ec6c3a1f5413942365286e7a2e",
+                        "size_bytes":  25756
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-08\\条材厂型材除鳞系统改造施工方案(3333)(1).docx",
+                        "archive_path":  "attachments/08-descaling-system/条材厂型材除鳞系统改造施工方案(3333)(1).docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "fcc1e8c3da9d9ce0c1c6e495018c641bb7068d8e56fa5efbfbaaab9d1964f0a1",
+                        "size_bytes":  864897
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Downloads\\高压水罐专项吊装方案（复核修订版）.docx",
+                        "archive_path":  "attachments/08-descaling-system/高压水罐专项吊装方案（复核修订版）.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "dbe804cfd5c10123e0252d33f2318a168fb38c5aabc5040ac4821ae369c8d68e",
+                        "size_bytes":  4409073
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\xwechat_files\\wxid_bspmv0rjp1rf22_3149\\msg\\file\\2026-08\\报价清单.xlsx",
+                        "archive_path":  "attachments/09-acid-system/报价清单.xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "13dc75555ef3103d19ee7d2a8b60814c62eec5061c7e4a6c7a82afafa9380dc2",
+                        "size_bytes":  88040
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\101机组酸循环系统和酸雾系统综合改造\\101机组酸循环系统和酸雾系统综合改造施工方案.docx",
+                        "archive_path":  "attachments/09-acid-system/101机组酸循环系统和酸雾系统综合改造施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "519c66af48444809b89fda21bec4909d3e090af8673bc46dc45c1b7e901e8c76",
+                        "size_bytes":  6305601
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\boq_items.jsonl",
+                        "archive_path":  "work-products/01-hotrolling-landscape/boq_items.jsonl",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "0828d2a6f8bb776ef7e92f58ec34e18e6512f3278e3b00de011e998b76397280",
+                        "size_bytes":  95642
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\boq_outline.txt",
+                        "archive_path":  "work-products/01-hotrolling-landscape/boq_outline.txt",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "183f07635603bec359e99e2f648e32b4f20a3310b65f18274e30aa58f07879c4",
+                        "size_bytes":  12982
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\generate_construction_plan.py",
+                        "archive_path":  "work-products/01-hotrolling-landscape/generate_construction_plan.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "7096bb3f7e3eddfe64874de87f920d505bf9c8c9ddf4fc978caba178a16b21d7",
+                        "size_bytes":  48438
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\pdf_text_summary.txt",
+                        "archive_path":  "work-products/01-hotrolling-landscape/pdf_text_summary.txt",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "bb5c49730825fee564d6472d60a69f50e2c199175c8580e3ac8ec86be4edaa89",
+                        "size_bytes":  9258
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\reference_foundation_plan.pdf",
+                        "archive_path":  "work-products/01-hotrolling-landscape/reference_foundation_plan.pdf",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5512c409c3374c3251aa67ba65befc566e3344d9754b06e5987ac695230cc19e",
+                        "size_bytes":  692180
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\热轧厂操控中心景观提升项目施工方案_武汉兴达建筑安装工程有限公司.docx",
+                        "archive_path":  "work-products/01-hotrolling-landscape/热轧厂操控中心景观提升项目施工方案_武汉兴达建筑安装工程有限公司.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "20957616bc7fcac0836af29bb967afc4982f78ea408043a0edf682be516dd944",
+                        "size_bytes":  5100869
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\热轧厂操控中心景观提升项目施工组织设计_武汉兴达建筑安装工程有限公司_模板版.docx",
+                        "archive_path":  "work-products/01-hotrolling-landscape/热轧厂操控中心景观提升项目施工组织设计_武汉兴达建筑安装工程有限公司_模板版.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "0f93979f0564c4711dace7e4edc5abb30bacc0a99718f1c3aa4fb68e1f33d7a3",
+                        "size_bytes":  5102593
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\figures\\01_园建平面图摘录.png",
+                        "archive_path":  "work-products/01-hotrolling-landscape/figures/01_园建平面图摘录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "35b60135e273b0a04bf2a43c92ae04f71b0a9f426ebe5f51c74e98b555a112ac",
+                        "size_bytes":  1159283
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\figures\\02_水景详图摘录.png",
+                        "archive_path":  "work-products/01-hotrolling-landscape/figures/02_水景详图摘录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2d7572001276a8fa7e3e83954ec0df8b44366f8a64951034a1d24d5f7d9ab672",
+                        "size_bytes":  1344040
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\figures\\03_绿化种植图摘录.png",
+                        "archive_path":  "work-products/01-hotrolling-landscape/figures/03_绿化种植图摘录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5ca753f2b927bcd21be04209f30c3b48b05cdb8d75a7f427cee4e6d84ac9fc70",
+                        "size_bytes":  717324
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\figures\\04_给排水图摘录.png",
+                        "archive_path":  "work-products/01-hotrolling-landscape/figures/04_给排水图摘录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "cc23be725f09557fc9ef22443719103817950eaa21b733a99913cb5ca97bf08d",
+                        "size_bytes":  1145271
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_hotrolling\\figures\\05_电气图摘录.png",
+                        "archive_path":  "work-products/01-hotrolling-landscape/figures/05_电气图摘录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "080fb924fcdb6078745fc042c36c8d04b7e004f54fd152d3032145945c50aa3a",
+                        "size_bytes":  957173
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_beihu_corrosion\\boq.xlsx",
+                        "archive_path":  "work-products/03-beihu-corrosion/boq.xlsx",
+                        "status":  "duplicate",
+                        "duplicate_of":  "attachments/03-beihu-corrosion/北湖、工业港介质管道及加药区域防腐隐患整工程量清单(1).xlsx",
+                        "sha256":  "9a976c27b4ba98b63db030ad4d3e308ab691b01fe957c04283679f0b2f22aa52",
+                        "size_bytes":  30989
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_beihu_corrosion\\boq_items.jsonl",
+                        "archive_path":  "work-products/03-beihu-corrosion/boq_items.jsonl",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "43f6229a1383e7fe4b5a11a8a42ab302eec27660bee9a2fcc753d0ac4ae4163a",
+                        "size_bytes":  44948
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_beihu_corrosion\\generate_plan.py",
+                        "archive_path":  "work-products/03-beihu-corrosion/generate_plan.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2e1adb0ea4d3291076ae347b7d99de5b8f82487b5132a910e92d07b9cf08f245",
+                        "size_bytes":  24711
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_beihu_corrosion\\北湖、工业港介质管道及加药区域防腐隐患整改施工方案.docx",
+                        "archive_path":  "work-products/03-beihu-corrosion/北湖、工业港介质管道及加药区域防腐隐患整改施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "97fecd5e10a1880dfa321047fcba3f495f9f902a3dedadda34e5605dd00d03cb",
+                        "size_bytes":  47207
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_wugang_wiring\\generate_wiring_plan.py",
+                        "archive_path":  "work-products/04-wugang-wiring/generate_wiring_plan.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "806b014d7ce07d887c16eb8d84c066b8685b389b58c9f199c08cc50a5793aead",
+                        "size_bytes":  27472
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_wugang_wiring\\site_01.jpg",
+                        "archive_path":  "work-products/04-wugang-wiring/site_01.jpg",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "129ab5544cd61ef6dddda7db54c41ca239d1df2f48aedd120435a3881c4a6b5a",
+                        "size_bytes":  158044
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_wugang_wiring\\site_02.jpg",
+                        "archive_path":  "work-products/04-wugang-wiring/site_02.jpg",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b4a154570d086b8c5d321bd126a002e8af452d907f359098de2967a64ff603e2",
+                        "size_bytes":  188637
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_wugang_wiring\\template.docx",
+                        "archive_path":  "work-products/04-wugang-wiring/template.docx",
+                        "status":  "duplicate",
+                        "duplicate_of":  "attachments/04-wugang-wiring/武钢日铁19号天车检修直爬梯更换施工方案.docx",
+                        "sha256":  "b43af372f9cbcff5eb18065bb128eb957479be554d79222242f95c449f608815",
+                        "size_bytes":  814214
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_wugang_wiring\\武钢日铁电线拆除及桥架穿管敷设施工方案.docx",
+                        "archive_path":  "work-products/04-wugang-wiring/武钢日铁电线拆除及桥架穿管敷设施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a8796dc2c5c5ad2ea8d21c000f2f2fa4380de5909539dd0be28c714d63de409f",
+                        "size_bytes":  1134735
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_jiaoyi_exhaust\\boq.xlsx",
+                        "archive_path":  "work-products/05-jiaoyi-exhaust/boq.xlsx",
+                        "status":  "duplicate",
+                        "duplicate_of":  "attachments/05-jiaoyi-exhaust/工程量清单-焦一作业区废气收集系统整改及环境整治(1).xlsx",
+                        "sha256":  "3a5a018a37b45162b5954d54ce02b4f07c886a32e46a1666a1ef37f9cb7db34f",
+                        "size_bytes":  44588
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_jiaoyi_exhaust\\boq_items.jsonl",
+                        "archive_path":  "work-products/05-jiaoyi-exhaust/boq_items.jsonl",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "442d47d0ef42135397c3b5bfc31a6b00bb925b0745190c044910e1de1a52ae82",
+                        "size_bytes":  38384
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_jiaoyi_exhaust\\generate_plan.py",
+                        "archive_path":  "work-products/05-jiaoyi-exhaust/generate_plan.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "9bd2708bc81c6bfdd8a3ff580fc62472bd2b6e224ef5766d203f21abae086a49",
+                        "size_bytes":  30591
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_jiaoyi_exhaust\\焦一作业区废气收集系统整改及环境整治100天进度计划.xlsx",
+                        "archive_path":  "work-products/05-jiaoyi-exhaust/焦一作业区废气收集系统整改及环境整治100天进度计划.xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "89a0a8573fb6fc9bda7e9c9b12e5a20b1c134111628bcf96deb5140fcb70a571",
+                        "size_bytes":  7025
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_jiaoyi_exhaust\\焦一作业区废气收集系统整改及环境整治施工方案.docx",
+                        "archive_path":  "work-products/05-jiaoyi-exhaust/焦一作业区废气收集系统整改及环境整治施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "8f3f77bb7c43130f82ad8e602c75ae7cd3a07c6e71e1bdff9b8c1fb197bcb925",
+                        "size_bytes":  48157
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_template_study_railing\\artifact.md",
+                        "archive_path":  "work-products/06-template-study/artifact.md",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e1e5921d7c875b641ee5abd493184644ea4b9ef9f28c439d4d614a29876a2de9",
+                        "size_bytes":  8675
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_template_study_railing\\style.json",
+                        "archive_path":  "work-products/06-template-study/style.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ede2c31b1a0fd3982a692e70e0d5747f1f1caa5b69072434d8f5b5050deb5356",
+                        "size_bytes":  4636
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\boq.xlsx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/boq.xlsx",
+                        "status":  "duplicate",
+                        "duplicate_of":  "attachments/07-canteen-gas-to-electric/（实事工程）质检中心食堂气改电（清单）0617(2).xlsx",
+                        "sha256":  "2e08781ed0ed686e0d2b919f0d42610d5bebf6ec6c3a1f5413942365286e7a2e",
+                        "size_bytes":  25756
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\boq_items.json",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/boq_items.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "fa16399c3a324ecb690d711dcc3417a1b6b6fc484817489deb000fb33a1904c9",
+                        "size_bytes":  17650
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\build_scheme.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/build_scheme.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e272489460491d642e6875378f3f5fae263a42ff23d8282fbcc67e4f5bb289da",
+                        "size_bytes":  66036
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\build_scheme_v2.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/build_scheme_v2.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "dccae9811cf4b1b11d054525c74ed61c3cc36398e236810fc4e0a14ef748d0ba",
+                        "size_bytes":  84801
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\inspect_doc_tail.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/inspect_doc_tail.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "051dbd3f0fa8e1fabb10e9e3d0226c6bffaebc7b49cf065fbdaf50caa401d119",
+                        "size_bytes":  714
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\make_contact_sheets.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/make_contact_sheets.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "7c0433ba2fa49d59c145f754a2b333795f56af6182a2a660a85f2c8e99251349",
+                        "size_bytes":  1629
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\prepare_v2_assets.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/prepare_v2_assets.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ca6eca60b577cce24f328276c664b3056e0cc97f9cab4d467da138cda412201e",
+                        "size_bytes":  879
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\split_schedule.py",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/split_schedule.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4ec051bc6b98bdf14592fea615137130055c6c49ec89260df3bd0637fc053412",
+                        "size_bytes":  1107
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\template-reference.docx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/template-reference.docx",
+                        "status":  "duplicate",
+                        "duplicate_of":  "attachments/06-tiaocai-template/条材厂型材分厂厂房楼梯栏杆隐患整治施工方案_.docx",
+                        "sha256":  "c0434ec87bd7455f1cd9ed328fe702d50798ce21696a517984c930fe6a0ae70c",
+                        "size_bytes":  3832230
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\build_diagrams.ps1",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/build_diagrams.ps1",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "6c38e1b48977b8545d6bff0ad445fa0a689d47d0d5b172ce18000ac2e15bce29",
+                        "size_bytes":  13850
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\总体施工示意图.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/总体施工示意图.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "31d8d992dc168fb6a83eb6bd5e7e877adbea81952af64185b8220bf40bbf2e3b",
+                        "size_bytes":  213431
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\施工进度计划_10月至12月.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/施工进度计划_10月至12月.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "bb7b80b69c581521a0eb8a8893bf349e4b1bb7eadfa63a89f146d89347482e1d",
+                        "size_bytes":  196412
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\施工进度计划_8月至10月.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/施工进度计划_8月至10月.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e3c9baabb7da9ba4a48153152605c4e847c13d46dce6eae1ed0647a13dca80c7",
+                        "size_bytes":  207354
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\燃气停用置换示意图.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/燃气停用置换示意图.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "181e5adda37aa067c93c00391f592d36739edf0d52ae6d8a064a048bd362745c",
+                        "size_bytes":  153302
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\规范查新_GB55024-2022_正文.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/规范查新_GB55024-2022_正文.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "9b415e1449328ac83fb545a858f51562f853a957a1c77ebc21d0e0ac23ae36ce",
+                        "size_bytes":  189423
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\规范查新_GB6222-2025_现行状态.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/规范查新_GB6222-2025_现行状态.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "c095ba307242189ac8344964bc50ddc49def3e20ae9fa4dce5698b4d3070a8c1",
+                        "size_bytes":  146779
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\assets\\质检中心食堂气改电施工示意图源文件.pptx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/assets/质检中心食堂气改电施工示意图源文件.pptx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "14bfe9a58fc4608d530d262455439c70e38bed66e9e0ce0002329c6d1c499711",
+                        "size_bytes":  88712
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\output\\质检中心食堂气改电施工方案.docx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/output/质检中心食堂气改电施工方案.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "96dedf5a571aab5074ff2d75698848888939dba7f3e547bd24d70edcf773f487",
+                        "size_bytes":  1077570
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\output\\质检中心食堂气改电施工方案_修订版.docx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/output/质检中心食堂气改电施工方案_修订版.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "542ac7d3acf8a9e90a683ed44ec5b6693e6677b8e1920e60e20be8989896e5c8",
+                        "size_bytes":  1093276
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\output\\质检中心食堂气改电施工方案_修订版.pdf",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/output/质检中心食堂气改电施工方案_修订版.pdf",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f9037c7799626719109fdb11d68751c5e67cde41b89d60ce275a8831b385defe",
+                        "size_bytes":  883533
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\output\\质检中心食堂气改电施工进度计划.xlsx",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/output/质检中心食堂气改电施工进度计划.xlsx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "d50f3c3238a4227017a48484131cd7fc162906d70ee44c3c227d7378eb7317a4",
+                        "size_bytes":  25115
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\output\\质检中心食堂气改电施工进度计划.xlsx.inspect.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/output/质检中心食堂气改电施工进度计划.xlsx.inspect.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "67522c174550baa0ac507a04ab6a30b1fc4211326e12bbceaec743eb0d9b8a88",
+                        "size_bytes":  646000
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\build_schedule.mjs",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/build_schedule.mjs",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4d658214c9a707e5af1fccb97f48a6a8bf3fda0b55dec8cd2427cff415a93f63",
+                        "size_bytes":  25505
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\inspect_boq.mjs",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/inspect_boq.mjs",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f6aa44fac6188e27f9aef1f7615b5f4fcb1b66e8f12669caf28937a1fd83bca4",
+                        "size_bytes":  3300
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\schedule_errors.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/schedule_errors.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "acc0111e19cf44d2753fc9ecd164bf1b27fbd65597463a25cf48bd1c65e90146",
+                        "size_bytes":  60
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\schedule_inspect.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/schedule_inspect.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "7989586c43bad4a675005e11877fcded95685bb646d3a0f9cf0ca2cc554e4476",
+                        "size_bytes":  5381
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\封-1 工程量清单.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/封-1 工程量清单.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e257753e03353a6b3c364f15b8d5e7520f91e78a0dee6efb672b57bb5081a158",
+                        "size_bytes":  934
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\封-1 工程量清单.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/封-1 工程量清单.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b4152b514fb7e126e9c6000caaae825b8c6cc903367eedc654a0014f30c8880c",
+                        "size_bytes":  190416
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\表-01 总说明.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/表-01 总说明.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f736721147a2b90b2e11f0ee4afccf4901cc445d3810b240c89d01f706c36389",
+                        "size_bytes":  991
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\表-01 总说明.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/表-01 总说明.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "938fe1c3928237baff7c17c9d074e78945f8907502a9b29ddbc8947f756ba3b7",
+                        "size_bytes":  261622
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\表8-宝钢咨询清单.ndjson",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/表8-宝钢咨询清单.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "1c6cbb712a87ea0aadde5dc17fe711e5c73c7a19496591af2ee4e5184a752bfd",
+                        "size_bytes":  21978
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\previews\\表8-宝钢咨询清单.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/previews/表8-宝钢咨询清单.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3a7c5dafd3c1cac25349195c48b6ed69937d910dce79abf07a257654f0283bd4",
+                        "size_bytes":  1021411
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\主要资源计划.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/主要资源计划.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "dfc5f09a336a524cc573ddf387fd7b8cac785741b0168358f150ae07afe8932c",
+                        "size_bytes":  110092
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\文档版横道图.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/文档版横道图.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "610ebb3e0d4af40c8edb77830fc2f845aa9bdd29941aa3c4ad7ca636e14c1f4a",
+                        "size_bytes":  141909
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\施工进度计划.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/施工进度计划.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "417da674d3064c3aca6a38a292dc8c8183e39201105e6382add464fece7c18a4",
+                        "size_bytes":  257331
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\清单摘要.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/清单摘要.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "397a0acf5f1e725e4b0c036b4688d1e49164bc6ed25eed3dffe89cd920e22294",
+                        "size_bytes":  560384
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\网络计划逻辑.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/网络计划逻辑.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b3d205be1bbb302996716db112ae6d65a66ec33ede6d70dc3a24cca07419c37d",
+                        "size_bytes":  213636
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_qc_canteen_gas_to_electric\\spreadsheet\\renders\\规范查新记录.png",
+                        "archive_path":  "work-products/07-canteen-gas-to-electric/spreadsheet/renders/规范查新记录.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5a3191d191b0843ecf1a3c39a14cc397e2208dc6f4881a9e2b5f1756da0d4021",
+                        "size_bytes":  202143
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\build_revision.py",
+                        "archive_path":  "work-products/08-descaling-system/build_revision.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "157c0cb9f27f2d9c941eb2dae3d7758fab708b48dcfb9afddda758a7affb6a3b",
+                        "size_bytes":  36014
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\capture_one.ps1",
+                        "archive_path":  "work-products/08-descaling-system/capture_one.ps1",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "28280e3694a9933fc3394c2378e0f11270a7690e4fc79d74800a98d4ee03cc78",
+                        "size_bytes":  918
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\capture_standard_pages.ps1",
+                        "archive_path":  "work-products/08-descaling-system/capture_standard_pages.ps1",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "12a28b9cb8c94f264ecd95ecdabbf346f7ef55ee7a76ce446be47b312011c607",
+                        "size_bytes":  1773
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\extract_source.py",
+                        "archive_path":  "work-products/08-descaling-system/extract_source.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "d16ce2a39422400fb5b746ba050a9d00aa7511267bd07f6b052211d3ce57185b",
+                        "size_bytes":  837
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\extract_standard_clauses.py",
+                        "archive_path":  "work-products/08-descaling-system/extract_standard_clauses.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f581e6fb71304e5718c30156f78b8cbcdd9def610564c0533cbce46805503fc9",
+                        "size_bytes":  1491
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\inspect_source.py",
+                        "archive_path":  "work-products/08-descaling-system/inspect_source.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "15b2cfde8d321243d9cd050e01f78c5329447c5acba6d1dd386336190f7c90b1",
+                        "size_bytes":  833
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\make_contact_sheets.py",
+                        "archive_path":  "work-products/08-descaling-system/make_contact_sheets.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "86fbb90332ac2683da49b7b4e14cfced9e86d372f6fa131d91025fd6cdef148c",
+                        "size_bytes":  1766
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\prepare_assets.py",
+                        "archive_path":  "work-products/08-descaling-system/prepare_assets.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "6804c1b9d74f387a280a6666c81588573e02b579807aade4dedc8b9108b4d043",
+                        "size_bytes":  1101
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\source_style.json",
+                        "archive_path":  "work-products/08-descaling-system/source_style.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4ca69774e5d1a4ec4081189f982a8adca5c480061b13a53a5f76a3ecc7a3c10e",
+                        "size_bytes":  5506
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\norm_JGJ276_p15.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/norm_JGJ276_p15.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5a28a24d06d76a56426f856b935736e7f58b954786df38ed148440bcdb944c61",
+                        "size_bytes":  447084
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\norm_JGJ276_p21.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/norm_JGJ276_p21.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f0972e87ae099f9d5b4a278bb35bcbc807a2939d36eda00e9e87d2007c3c381e",
+                        "size_bytes":  236008
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\norm_TSG51_p29.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/norm_TSG51_p29.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2c4ce49a8823d375711f756f6f7d7d111c83bdd0f3db2aae7c095d3d5a60a82c",
+                        "size_bytes":  644421
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_20801.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_20801.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3a45bef526b872b6dcd6df1d73b5fbccb2a7894a62e56030616be256747ebe9a",
+                        "size_bytes":  205570
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_50168.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_50168.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "772fd872d9c840161f28f21704a24168960eca9273e301b0763ab50772523148",
+                        "size_bytes":  269694
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_50205.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_50205.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2c024615dbc816d4f93798b4f56a9ab3d11150b7967d830b69966e4340d5cf0f",
+                        "size_bytes":  96736
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_50235.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_50235.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a4eec6e81138b4d20551f0f9aea2a5c92a476584740d7510172275045ab2c622",
+                        "size_bytes":  116672
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_jgjt46.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_jgjt46.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "83e0f237accc611f5dcd7fc1e127aeefebc75bd89d83b07442ba300c98725d7e",
+                        "size_bytes":  124549
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_tsg31.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_tsg31.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f0b2b473f3b5b4e638dfc3b908a785eb7923b1f48989fdce13fa9a4c1c546bb6",
+                        "size_bytes":  103779
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\raw_tsgz6002.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/raw_tsgz6002.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5780e0114de66910f7cb34448a64f14b56a4f9a8872f613fd07a67e060ba2021",
+                        "size_bytes":  103946
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_GB50168-2018_桥架转弯与接地.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_GB50168-2018_桥架转弯与接地.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5eab6fd36e87c676fb7105c02bf45b855113eb2a35731021a0a78980ed4b83cf",
+                        "size_bytes":  97229
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_GB50205-2020_涂层缺陷修补.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_GB50205-2020_涂层缺陷修补.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4d462fc31f8b09fea9253d01b521123318571b326a5486525087fa1b902ecf56",
+                        "size_bytes":  265156
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_GB50235-2010_液压试验要求.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_GB50235-2010_液压试验要求.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "03399f9d1ea56587457e3e8a77f002bda839098c80f77e2f5dbdf4c097296513",
+                        "size_bytes":  444397
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_GBT20801.1-2025_焊接接头检查比例.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_GBT20801.1-2025_焊接接头检查比例.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ac76cd7476d674e9f3c0cb015c118241e9000deca6be6ceacb7f4726f5d0a241",
+                        "size_bytes":  438097
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_JGJT46-2024_三级配电与TNS.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_JGJT46-2024_三级配电与TNS.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "72913534275c872307156a58501b6483c16a8b7a4fa4a5b12f6d2fede6c1a1db",
+                        "size_bytes":  241028
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_TSG31-2025_无损检测与耐压试验.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_TSG31-2025_无损检测与耐压试验.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "df947784b4ef6b82a01682513219a38cbb6a2e9258176f210d034da55ec79fd0",
+                        "size_bytes":  483932
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范原文_TSGZ6002-2026_持证范围与有效期.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范原文_TSGZ6002-2026_持证范围与有效期.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "8162161ea2e964ce28414155407043ee30fb1e07d10844e9c9d28fd8e79db849",
+                        "size_bytes":  456943
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范封面_GB50168-2018.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范封面_GB50168-2018.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "6154f4cfd6af3e99c720beb671a4f157668c4ce73024afbfd17c02e4b893fcb7",
+                        "size_bytes":  194939
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_GB50205-2020.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_GB50205-2020.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "10ddb0ce6a6348bce298d4e01f04f0a827dda15b765adbdcae2286246f04f8f4",
+                        "size_bytes":  24795
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_GB50235-2010.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_GB50235-2010.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "cfdbcfb2ebe28cf5ac4093482c1684d0a562885a487cc8c0f5590c5ae43a05a5",
+                        "size_bytes":  32123
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_GBT20801.1-2025.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_GBT20801.1-2025.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3ce5e97f4e17f2b4fd190fe5207d6c111da7ed155d3264361fda0291eadd7c7c",
+                        "size_bytes":  53444
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_JGJT46-2024.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_JGJT46-2024.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "7a9ab416091ac02d30e785eb644a3a3a1c2ef9469660221f7d8ea6b1a438d054",
+                        "size_bytes":  43318
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_TSG31-2025.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_TSG31-2025.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "bff40b0c05a04ce0225e92ef975b8585e37655aac18cb2a1387adbd527f297e8",
+                        "size_bytes":  50741
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\assets\\规范查新_TSGZ6002-2026.png",
+                        "archive_path":  "work-products/08-descaling-system/assets/规范查新_TSGZ6002-2026.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "d335581b7ddad563b2ce7d3356a1dc2b43f859b22c31551c037da43d8af330fb",
+                        "size_bytes":  47911
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\output\\条材厂型材除鳞系统改造_规范库.zip",
+                        "archive_path":  "work-products/08-descaling-system/output/条材厂型材除鳞系统改造_规范库.zip",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b2f73b942b19d7dfbdd9e7030cb4a3b1b53f40ce25056a1f847c9322a969a280",
+                        "size_bytes":  90235511
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\output\\条材厂型材除鳞系统改造施工方案_含高压水罐专项吊装_修订版.docx",
+                        "archive_path":  "work-products/08-descaling-system/output/条材厂型材除鳞系统改造施工方案_含高压水罐专项吊装_修订版.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4292b252420d0d9f4a41ab3c5b6649faa35c8e8709f58810d709fe0816747549",
+                        "size_bytes":  7967533
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\output\\条材厂型材除鳞系统改造施工方案_模板修订版.docx",
+                        "archive_path":  "work-products/08-descaling-system/output/条材厂型材除鳞系统改造施工方案_模板修订版.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "617debd94b1a0eecd5352debbab35e230bebf71b99df9e7de3b07e966909fe80",
+                        "size_bytes":  1294496
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_descaling_system_revision\\output\\条材厂型材除鳞系统改造施工方案_规范原文修订版.docx",
+                        "archive_path":  "work-products/08-descaling-system/output/条材厂型材除鳞系统改造施工方案_规范原文修订版.docx",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "555f341e5da16779efb3e62704bfd79e18519000ec1a20403f2bfe13b2560053",
+                        "size_bytes":  3277581
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\analyze_boq.py",
+                        "archive_path":  "work-products/09-acid-system/analyze_boq.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "b5a973fe8d83752eb8006ae6a2e772b6eb9046e668ead7987e8997238be3fa9a",
+                        "size_bytes":  2690
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\analyze_standards.py",
+                        "archive_path":  "work-products/09-acid-system/analyze_standards.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "255e6b66952cf410f75a8dca0c7ceb059fe262a0fb1b55579d743462fca7b422",
+                        "size_bytes":  964
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\artifact.md",
+                        "archive_path":  "work-products/09-acid-system/artifact.md",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "8a3a4f9540bcbf4a1311b1a5e1b6a43b27ff50658e0aa3eaa15f276c404d0154",
+                        "size_bytes":  3709
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\audit_final_docx.py",
+                        "archive_path":  "work-products/09-acid-system/audit_final_docx.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "26d28016eef577fab9380d0b32292f4a185cd969de13ba7ced94d10dc2d8c157",
+                        "size_bytes":  2318
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_summary.txt",
+                        "archive_path":  "work-products/09-acid-system/boq_summary.txt",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f58e9677d942a9c733b53f9141b3679b61d08f486e1599549a888b0496013288",
+                        "size_bytes":  49894
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\build_scheme.py",
+                        "archive_path":  "work-products/09-acid-system/build_scheme.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "110bda912a7c88e2ef1b4f1fb7552d1186ad3b58c9a20c07724228908177c5b5",
+                        "size_bytes":  92678
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\create_skill_template.py",
+                        "archive_path":  "work-products/09-acid-system/create_skill_template.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "8e7ac6519aeafcdb1760e0b2502d7f7f449471ba23bf0aabe9b2d8443cb3116c",
+                        "size_bytes":  5281
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\extract_boq.mjs",
+                        "archive_path":  "work-products/09-acid-system/extract_boq.mjs",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e937840aa27f4fd4ba27ee0a30010b5274c279026866685b7649f82f82dd4937",
+                        "size_bytes":  2471
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\inspect_boq.mjs",
+                        "archive_path":  "work-products/09-acid-system/inspect_boq.mjs",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "5e92e892db384ccf476086895b10edb1e5254206038e5aef5f05946d4d2b39f6",
+                        "size_bytes":  1791
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\inspect_template.py",
+                        "archive_path":  "work-products/09-acid-system/inspect_template.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f8bcb05e832b5be6dd9d02196083eac665874c42441a3fb68bf56f6887d76aaf",
+                        "size_bytes":  1886
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\render_final_pdf.py",
+                        "archive_path":  "work-products/09-acid-system/render_final_pdf.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "050bc1c2d2b99f2a30bc046ec92b04705fef419ce1b22bb4edfa90894fd734f2",
+                        "size_bytes":  1859
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\render_pdf_contacts.py",
+                        "archive_path":  "work-products/09-acid-system/render_pdf_contacts.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "8dd0156db15c42d3da3acab9050ed256b4b114c9565ba48cfee601bf0f3f1dfc",
+                        "size_bytes":  1458
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\render_standard_pages.py",
+                        "archive_path":  "work-products/09-acid-system/render_standard_pages.py",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "c353be5ae938ff73bd2dbbe7649268f5b5248e1223f21bae006341039fa904a5",
+                        "size_bytes":  2083
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\standards_analysis.txt",
+                        "archive_path":  "work-products/09-acid-system/standards_analysis.txt",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a8c1f37216bd93d9eb0f6d9bec21cb7fdbd68d8d8aaf85cc7081cc6ff3115b8b",
+                        "size_bytes":  191517
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\template-style-evidence.json",
+                        "archive_path":  "work-products/09-acid-system/template-style-evidence.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "295353222e92ac7bdcc3ab9575594c98c04c82f4098ce0558c429e4992be66f5",
+                        "size_bytes":  5034
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\template_structure.txt",
+                        "archive_path":  "work-products/09-acid-system/template_structure.txt",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "2a90e780cf07d0b868e3cb079b23b91efbd2f2e3e72aef97a51b2492e72762e7",
+                        "size_bytes":  74256
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\tuxiaohu.html",
+                        "archive_path":  "work-products/09-acid-system/tuxiaohu.html",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4cbcb4463f42fdf4fb1a0a95fbd6de907b93d47800da82009333b86fc8cadb7c",
+                        "size_bytes":  16218
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\规范下载与引用索引.md",
+                        "archive_path":  "work-products/09-acid-system/规范下载与引用索引.md",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "962c001281d08d4c08f62c126d2f928b04d6e5a4bd8d00b7d9f37002164499ad",
+                        "size_bytes":  1468
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\PPH管道热熔与支承示意图.png",
+                        "archive_path":  "work-products/09-acid-system/assets/PPH管道热熔与支承示意图.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "cb5d79109f537524c319627310e2202e51c2bb85d57fb0cb2ed329244f968a2f",
+                        "size_bytes":  1898368
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\酸雾收集净化系统工艺示意图.png",
+                        "archive_path":  "work-products/09-acid-system/assets/酸雾收集净化系统工艺示意图.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4fa59114ba5faad620b119cade291224f696c15ad8520e10a29a8730fbc3d4a8",
+                        "size_bytes":  1794233
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB30871_p09_介质处理与能量隔离.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB30871_p09_介质处理与能量隔离.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a9946570fae13f79a92b67bcb526448b8d5dd17dff47965dd5f4159ec6ec0191",
+                        "size_bytes":  954007
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB30871_p13_受限空间检测.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB30871_p13_受限空间检测.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ef06c39314f79848068b2b7e18b01106e3c75bb61108377c4a57f7dad82c0105",
+                        "size_bytes":  821074
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB30871_p16_吊装作业要求.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB30871_p16_吊装作业要求.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f8f23f98cf7398d179aa52ad66b0755ae822073e921f6962d3e81705c1b45a2a",
+                        "size_bytes":  819967
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB50168_p19_电缆支架桥架安装.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB50168_p19_电缆支架桥架安装.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "f210d2c902854301352c260323df8358bce78c9efc855e5ee44602c3f5ac7ee2",
+                        "size_bytes":  345207
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB50168_p38_电缆防火封堵.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB50168_p38_电缆防火封堵.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "bfa863b6136dac0b5500048668d2ab94d7128237bed5f1e15c6f9e7c8bea96d8",
+                        "size_bytes":  311873
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB50212_p16_混凝土基层要求.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB50212_p16_混凝土基层要求.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "314138ef73e5e3dafeb0b30131b7338304a9dd7193306f01f9557e7b779af6ce",
+                        "size_bytes":  280539
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB50212_p28_纤维增强塑料施工.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB50212_p28_纤维增强塑料施工.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "dc153b127382025b3df24d5f8d094902663e110102b7a6634082c4997cb3f4bf",
+                        "size_bytes":  415680
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\assets\\standards\\GB50212_p31_养护与质量检查.png",
+                        "archive_path":  "work-products/09-acid-system/assets/standards/GB50212_p31_养护与质量检查.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "93ee06d57f3c6f7f19fc04735e97f75974c7d31a191c67f22e011dbdf73aaa99",
+                        "size_bytes":  156686
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\all_rows.json",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/all_rows.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "399fe4000e0c5b7fc8967efe30db6324d910e02676841277d43802012dc0a08c",
+                        "size_bytes":  153696
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\items.json",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/items.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "859be12bd8b74dece4c1e16081f98163317c9234006fc6e85bbd8cb6dd1742dc",
+                        "size_bytes":  110618
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_001_060.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_001_060.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "46f6cc38deda96a6e5467d94e589bffa391f29fab6bb2e0dff51f21b410d589b",
+                        "size_bytes":  433831
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_061_120.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_061_120.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3548b4ba4ba54031ee1b10bee7f7171b76f397385d8d366c1bd583ebf78bb718",
+                        "size_bytes":  429448
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_121_180.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_121_180.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ff1c8af215bbdc51e44c3f099a31aae71f19b85b9b41024fb7c3a68bc804dff2",
+                        "size_bytes":  374121
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_181_240.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_181_240.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "ae39bcc5f4073510385b9aa706e86e0c08230b9f8068222a33743b0bda9bc1f9",
+                        "size_bytes":  346185
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_241_300.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_241_300.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4a19747966b3cb45774fa7531ab0d1f60788c663f00f70ee69b5f0f83e2aff16",
+                        "size_bytes":  341315
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_301_360.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_301_360.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "88be8ce8e0cb54a4a655a52aa10a9318cee884c2a77ecd17d4bb6d1b112acc12",
+                        "size_bytes":  346356
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_361_420.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_361_420.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "dad93f494c8c8f61274d15cd4b7a9a95710529e0b754c992838ad43ffd4e2894",
+                        "size_bytes":  287203
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_421_480.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_421_480.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "855301afe4dfcd842554c2fbe6d23b632a2ddc78a2b76abd1bb7db164f1886a4",
+                        "size_bytes":  363886
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_481_540.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_481_540.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "796bb8b30464a77238bc2f9a1c548d6e71382076a09ea153a1668d192d5f4627",
+                        "size_bytes":  340789
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\rows_541_580.png",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/rows_541_580.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "472949a1187724ce3fe66c7969fe9209a859100cd9915eee9bf9b8aec2eadffe",
+                        "size_bytes":  251480
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_extract\\sections.json",
+                        "archive_path":  "work-products/09-acid-system/boq_extract/sections.json",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "e77b1de7a82b79f368a733de109ff23154395d0ac210e37a91c570f6f7b21059",
+                        "size_bytes":  1066
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\overview.ndjson",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/overview.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "3ade783fab4e4bb0050f9f0b727906e8ff4fd0dd7ef8b906953ddc82e35103ab",
+                        "size_bytes":  5462
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\sheets.ndjson",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/sheets.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "69c1318179ce4a6af887faea8da20b646351637bed66439148cf0168094f0979",
+                        "size_bytes":  329
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\封-1 工程量清单.ndjson",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/封-1 工程量清单.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "4d7357e02a19f197cbe6fba202bcd7b64b49ca7f441ed3fa03d4603627b8bc78",
+                        "size_bytes":  940
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\封-1 工程量清单.png",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/封-1 工程量清单.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a91ecef9f2d1d3abec0c0ffaba34f0b6cf5b394a7c53e16837e29815326feb59",
+                        "size_bytes":  67358
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\表-01 总说明.ndjson",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/表-01 总说明.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "7c2ff50c0d201642bd0ad9d62dfdb5fa212ae086137aa932a3af73c7447918b3",
+                        "size_bytes":  997
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\表-01 总说明.png",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/表-01 总说明.png",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "a2fe5085492c8665c6b14bce58bd8897f5f1d7bb4875250fe7c924612cc59d83",
+                        "size_bytes":  135689
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\boq_preview\\表8-宝钢咨询清单.ndjson",
+                        "archive_path":  "work-products/09-acid-system/boq_preview/表8-宝钢咨询清单.ndjson",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "6c8fd3bf5673017b6fb5d1a19e7cddc6d1af4f5107f4a6b0dcae96b010438dfb",
+                        "size_bytes":  61443
+                    },
+                    {
+                        "source":  "C:\\Users\\Administrator\\Desktop\\Metallurgical_BOQ_AgentSkill_Fixed\\agents\\_work_quote_scheme\\final_qa\\101机组酸循环系统和酸雾系统综合改造施工方案_QA.pdf",
+                        "archive_path":  "work-products/09-acid-system/final_qa/101机组酸循环系统和酸雾系统综合改造施工方案_QA.pdf",
+                        "status":  "copied",
+                        "duplicate_of":  null,
+                        "sha256":  "adf6792c2b90e8972e8eb2d57282b2cb8dc5dc642dbb06d8e8fa59e1fd3da86d",
+                        "size_bytes":  2901217
+                    }
+                ]
+}

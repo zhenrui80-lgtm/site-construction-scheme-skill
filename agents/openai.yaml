@@ -1,0 +1,4 @@
+interface:
+  display_name: "冶金工业施工方案"
+  short_description: "按照工程量清单生成模板化专业施工方案并插入规范原文截图"
+  default_prompt: "Use $industrial-construction-scheme to analyze this BOQ and create a template-preserving Chinese construction scheme with current standard excerpts, diagrams, risk controls, emergency response, and a verified schedule."

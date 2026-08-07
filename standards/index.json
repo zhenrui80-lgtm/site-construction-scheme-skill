@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-07T02:19:50.551676+00:00",
+  "standards": [
+    {
+      "number": "GB 30871-2022",
+      "title": "危险化学品企业特殊作业安全规范",
+      "filename": "GB30871-2022_危险化学品企业特殊作业安全规范.pdf",
+      "sha256": "62ef6e5b30d212861870bdaadece2a19ba896713bc1608e29d1ac64b6361e50f",
+      "size_bytes": 456672,
+      "pages": 30,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "101机组酸循环系统和酸雾系统综合改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 50168-2018",
+      "title": "电缆线路施工及验收标准",
+      "filename": "GB50168-2018_电缆线路施工及验收标准.pdf",
+      "sha256": "c5ebe00617c2e58ae88c3285bd42e5b21521183c295fb971c689e0fe5a1547a7",
+      "size_bytes": 2040682,
+      "pages": 77,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造",
+        "101机组酸循环系统和酸雾系统综合改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 50205-2020",
+      "title": "钢结构工程施工质量验收标准",
+      "filename": "GB50205-2020_钢结构工程施工质量验收标准.pdf",
+      "sha256": "252c92e1629a24a18deba06573a7c9530158dccf5e0f5ab9303266611b1b1cab",
+      "size_bytes": 8477406,
+      "pages": 206,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 50212-2014",
+      "title": "建筑防腐蚀工程施工规范",
+      "filename": "GB50212-2014_建筑防腐蚀工程施工规范.pdf",
+      "sha256": "a02837fea81f89504e406768dcc2f961b317942c5ed7a1d71841ddf872e7993f",
+      "size_bytes": 8464768,
+      "pages": 171,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "101机组酸循环系统和酸雾系统综合改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 50235-2010",
+      "title": "工业金属管道工程施工规范",
+      "filename": "GB50235-2010_工业金属管道工程施工规范.pdf",
+      "sha256": "2e99fe654fa4be4761f25348dcf51dfc70cb55bd2786f09a90baec6f966b23cb",
+      "size_bytes": 1014219,
+      "pages": 108,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 55009-2021",
+      "title": "燃气工程项目规范",
+      "filename": "GB55009-2021.pdf",
+      "sha256": "dc099c9ef5bbc2d30c6fa5d9c0641b8f67afbb850bd9a6c74d612c983fc270f3",
+      "size_bytes": 23750490,
+      "pages": 77,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "质检中心食堂气改电"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 55034-2022",
+      "title": "建筑与市政施工现场安全卫生与职业健康通用规范",
+      "filename": "GB55034-2022_建筑与市政施工现场安全卫生与职业健康通用规范__f3c3f4da.pdf",
+      "sha256": "f3c3f4dad8954b53c20c95a801b592adf843c28867caf596b2c9f9851c9c593e",
+      "size_bytes": 3075484,
+      "pages": 19,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "101机组酸循环系统和酸雾系统综合改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB 55034-2022",
+      "title": "建筑与市政施工现场安全卫生与职业健康通用规范（摘录）",
+      "filename": "GB55034-2022_建筑与市政施工现场安全卫生与职业健康通用规范.pdf",
+      "sha256": "740f359e5b2897489baa169b7c86e2c8ea1681ac5a08f0d55134330889c9681a",
+      "size_bytes": 69984,
+      "pages": 3,
+      "status": "reference-excerpt",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "GB/T 20801.1-2025",
+      "title": "压力管道规范第1部分工业管道",
+      "filename": "GBT20801.1-2025_压力管道规范第1部分工业管道.pdf",
+      "sha256": "9369bb7bd2a1901c895675f018543f54fc7c54be6f3d11f45e380bec18a2fbc3",
+      "size_bytes": 14466575,
+      "pages": 311,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "JGJ 276-2012",
+      "title": "建筑施工起重吊装工程安全技术规范",
+      "filename": "JGJ276-2012_建筑施工起重吊装工程安全技术规范.pdf",
+      "sha256": "fbd7eeb846fb9e227ae248e97df36dbabc833d40e43c523815b2a63303cb68aa",
+      "size_bytes": 5354841,
+      "pages": 110,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "JGJ/T 46-2024",
+      "title": "施工现场临时用电安全技术标准",
+      "filename": "JGJT46-2024_施工现场临时用电安全技术标准.pdf",
+      "sha256": "74d41e4a7c56e8d933e8fbcdc426b89724d7ea7c26c6ffb8e00edb362992eb7b",
+      "size_bytes": 984025,
+      "pages": 107,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "JGJ/T 46-2024",
+      "title": "施工现场临时用电安全技术标准",
+      "filename": "JGJT46-2024.pdf",
+      "sha256": "8d086b22cee0aed44acebcbdfc3aa3aff6672687d9c50d5241f8d628f7d40981",
+      "size_bytes": 30070159,
+      "pages": 154,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "质检中心食堂气改电"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "TSG 31-2025",
+      "title": "工业管道安全技术规程",
+      "filename": "TSG31-2025_工业管道安全技术规程.pdf",
+      "sha256": "be307a497e373a4c80d187c3b49b2a94315789ddfd5838ec36a122fa7c51d0d0",
+      "size_bytes": 38781395,
+      "pages": 90,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "TSG 51-2023",
+      "title": "第1号修改单",
+      "filename": "TSG51-2023_第1号修改单.pdf",
+      "sha256": "3d989ca70bb43371f7223cc44d9c3d0a0d788cedf9e1c67704edf0c8b477697a",
+      "size_bytes": 115844,
+      "pages": 5,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "TSG 51-2023",
+      "title": "起重机械安全技术规程",
+      "filename": "TSG51-2023_起重机械安全技术规程.pdf",
+      "sha256": "50333780cf5c93ce2d1824ca11161421020ca488e16f63d1e738846ff283fefb",
+      "size_bytes": 1839321,
+      "pages": 148,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造",
+        "101机组酸循环系统和酸雾系统综合改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "TSG Z6002-2026",
+      "title": "特种设备焊接操作人员考核细则",
+      "filename": "TSGZ6002-2026_特种设备焊接操作人员考核细则.pdf",
+      "sha256": "75697d9f53d201a14000485207943708be28e7186a93490ee9918ad631e7ee16",
+      "size_bytes": 24597958,
+      "pages": 72,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "local-file",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "从本对话既有项目工作库归档"
+      ]
+    }
+  ]
+}

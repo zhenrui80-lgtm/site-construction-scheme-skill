@@ -1,4 +1,4 @@
 interface:
-  display_name: "冶金工业施工方案"
-  short_description: "按照工程量清单生成模板化专业施工方案并插入规范原文截图"
-  default_prompt: "Use $industrial-construction-scheme to analyze this BOQ and create a template-preserving Chinese construction scheme with current standard excerpts, diagrams, risk controls, emergency response, and a verified schedule."
+  display_name: "现场施工方案 Skill"
+  short_description: "按工程量清单和既定模板编制专业现场施工方案并完成排版校核"
+  default_prompt: "使用 $site-construction-scheme 分析项目资料并编制含规范原文截图、示意图、危险源、应急预案和进度计划的专业现场施工方案。"

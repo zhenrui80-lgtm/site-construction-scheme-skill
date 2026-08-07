@@ -1,9 +1,9 @@
 ---
-name: industrial-construction-scheme
+name: site-construction-scheme
 description: Create and revise professional Chinese metallurgical or industrial construction-scheme DOCX deliverables from BOQ spreadsheets, drawings, photos, existing schemes, and fixed schedules. Use for 施工方案、施工组织设计、专项方案、清单编方案、模板改方案、规范原文截图、危险源辨识、应急预案、施工进度计划, especially when the user requires the established 条材厂-style approval layout, 方正仿宋_GB2312 body text, downloaded standard-PDF excerpts instead of website screenshots, generated construction diagrams, and render-verified Word output.
 ---
 
-# Industrial Construction Scheme
+# 现场施工方案 Skill
 
 Produce a finished, editable construction scheme rather than an outline. Analyze the supplied artifacts, preserve the accepted template, substantiate methods with current standards, add only useful visuals, and verify the final DOCX page by page.
 
@@ -136,9 +136,9 @@ For generated visuals:
 
 ## Example Invocations
 
-- `用 $industrial-construction-scheme 按我们之前的模板，根据这个清单做施工方案，工期8月7日至12月31日。`
-- `用 $industrial-construction-scheme 修改这份别人编的方案，人员不要改，补规范原文截图、危险源和应急预案。`
-- `用 $industrial-construction-scheme 把专项吊装方案统一格式后并入原施工方案，正文只改为方正仿宋_GB2312，字号不要变。`
+- `用 $site-construction-scheme 按我们之前的模板，根据这个清单做施工方案，工期8月7日至12月31日。`
+- `用 $site-construction-scheme 修改这份别人编的方案，人员不要改，补规范原文截图、危险源和应急预案。`
+- `用 $site-construction-scheme 把专项吊装方案统一格式后并入原施工方案，正文只改为方正仿宋_GB2312，字号不要变。`
 
 ## Handoff
 

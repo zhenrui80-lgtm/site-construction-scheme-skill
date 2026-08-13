@@ -42,6 +42,8 @@ Do not use a screenshot of a search result, standards website, browser PDF viewe
 
 - Prefer 4-8 high-value excerpts for a normal scheme.
 - Add more only for a technically broad or high-risk project.
+- Maintain at least 4,000 narrative characters per inserted standard excerpt. Standards support the explanation; they do not replace it.
+- Put a project-specific interpretation paragraph adjacent to every excerpt, stating the applicable work package, control action, record, and acceptance consequence.
 - Keep each excerpt close to the relevant method or control.
 - Avoid redundant pages from the same standard.
 - Use full-page screenshots only when the clause would otherwise be unreadable.
@@ -60,3 +62,5 @@ Do not use a screenshot of a search result, standards website, browser PDF viewe
 ## Generated Schematics
 
 Generated diagrams supplement evidence; they do not replace drawings or standards. Use them for process relationships, fusion sequence, lifting zones, routing concepts, temporary supports, or emergency flow. Clearly label them as schematic and state that approved drawings, manufacturer documents, and site conditions govern.
+
+For a normal full scheme, prefer 2-6 useful technical figures when source information supports them. Keep at least 1,800 narrative characters per embedded media item after allowing for cover logos. If a document fails this balance, remove redundant screenshots or deepen the associated engineering explanation.

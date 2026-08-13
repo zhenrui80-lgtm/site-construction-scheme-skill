@@ -1,11 +1,11 @@
 ---
 name: site-construction-scheme
-description: Create and revise professional Chinese metallurgical or industrial construction-scheme DOCX deliverables from BOQ spreadsheets, drawings, photos, existing schemes, and fixed schedules. Use for 施工方案、施工组织设计、专项方案、清单编方案、模板改方案、规范原文截图、危险源辨识、应急预案、施工进度计划, especially when the user requires the established 条材厂-style approval layout, 方正仿宋_GB2312 body text, downloaded standard-PDF excerpts instead of website screenshots, generated construction diagrams, and render-verified Word output.
+description: Create and revise full-depth professional Chinese metallurgical or industrial construction-scheme DOCX deliverables from BOQ spreadsheets, drawings, photos, existing schemes, and fixed schedules. Use for 施工方案、施工组织设计、专项方案、清单编方案、模板改方案、规范原文截图、危险源辨识、应急预案、施工进度计划, especially when the user requires the established 冷轧厂 or 条材厂 cover and approval layout, preserved font hierarchy, BOQ-specific methods, downloaded standard-PDF excerpts, generated construction diagrams, and automatic depth plus render verification.
 ---
 
 # 现场施工方案 Skill
 
-Produce a finished, editable construction scheme rather than an outline. Analyze the supplied artifacts, preserve the accepted template, substantiate methods with current standards, add only useful visuals, and verify the final DOCX page by page.
+Produce a finished, editable construction scheme rather than an outline or compressed technical note. Preserve the selected plant template's cover, approval page, and typography while building a full, project-specific technical and management body. Substantiate methods with current standards, use visuals in balance with prose, and block delivery when depth or render gates fail.
 
 ## Default Contract
 
@@ -14,10 +14,13 @@ Produce a finished, editable construction scheme rather than an outline. Analyze
 - Treat supplied start and finish dates as inclusive; compute and state calendar days accurately.
 - Preserve personnel names and staffing from the source scheme. Never invent named personnel.
 - Preserve the source/template file. Write to a new project-specific output folder.
-- When no template is supplied, use `assets/条材厂施工方案版式模板.docx`.
+- Treat presentation and content depth as separate decisions. A template controls the cover, approval page, contents, heading ladder, fonts, spacing, tables, header, footer, and page numbering; it never justifies a shorter body.
+- Select the presentation template in this order: user-supplied template; user-named plant style; project-name match (`冷轧厂` or cold-rolling unit -> `assets/冷轧厂施工方案版式模板.docx`, `条材厂` -> `assets/条材厂施工方案版式模板.docx`); otherwise use the bundled 条材厂 style and state the choice.
+- Treat every block from the cover through the last contents entry as a frozen front-matter region. Replace only approved variable text at run level: project name, project number, contractor, date, and supplied signatory names. Preserve fixed labels and all formatting and structure.
 - Preserve existing point sizes unless the user explicitly asks to resize text. Change font face without flattening the size hierarchy.
-- Default body face to `方正仿宋_GB2312`; keep cover, headings, captions, tables, and schedule at their established sizes.
-- Deliver the DOCX only after Word/PDF rendering and visual inspection succeed.
+- Preserve the selected template's body face. Where the source does not define one, use `方正仿宋_GB2312`; keep cover, headings, captions, tables, and schedule at their established faces and sizes.
+- Default to the `standard` full-depth profile. Use `complex` for multi-discipline, shutdown/tie-in, hazardous media, lifting, confined-space, pressure, or major production-interface work. Use `small` only when the user explicitly asks for a concise scheme and the scope is genuinely single-discipline and low-risk.
+- Deliver the DOCX only after automatic content-depth checks and Word/PDF visual inspection both succeed.
 
 ## Load Supporting Guidance
 
@@ -25,6 +28,8 @@ Read only the references needed for the task:
 
 - Read `references/template-rules.md` before creating or restructuring a DOCX.
 - Read `references/content-checklist.md` before drafting technical chapters.
+- Read `references/table-policy.md` before deciding whether any body content belongs in a table.
+- Read `references/quality-baseline.md` before choosing the depth profile and before final validation.
 - Read `references/standards-and-evidence.md` when standards must be researched, downloaded, or illustrated.
 - Read `references/verification.md` before final handoff.
 
@@ -36,9 +41,10 @@ Use the `documents` skill for DOCX work, the `spreadsheets` skill for BOQ work, 
 
 1. Resolve every supplied BOQ, drawing, photo, scheme, and template path.
 2. Copy or read sources into a dedicated working directory; never overwrite the originals.
-3. Identify the project name, contractor, theoretical dates, required output type, and any fixed personnel list.
-4. Inspect the accepted template before drafting. Record section orientation, margins, cover positions, approval table, contents page, heading sizes, body size, table sizes, footer/page number, and schedule layout.
-5. If the user says only the font should change, preserve all point sizes and spacing.
+3. Identify the project name, contractor, theoretical dates, required output type, fixed personnel list, plant style, and depth profile.
+4. Inspect the accepted template before drafting. Record section orientation, margins, cover positions, approval table, contents page, heading faces and sizes, body face and size, paragraph rhythm, table sizes, footer/page number, and schedule layout.
+5. Record a short template decision in the work log: `冷轧厂`, `条材厂`, or `user-supplied`, with the source path. If the user says only the font should change, preserve all point sizes and spacing.
+6. Identify the first body-heading marker and its occurrence in the template. Use it later with `scripts/audit_front_matter.py`; do not edit front-matter page breaks, tables, margins, section properties, headers, footers, or styles to fix pagination.
 
 ### 2. Extract And Interpret The BOQ
 
@@ -55,11 +61,19 @@ Then inspect the extracted rows directly. Determine:
 - large or hazardous equipment, estimated weights, elevations, restricted access, cranes, aerial work platforms, scaffolds, shutdown windows, and production tie-ins;
 - quantities that should appear in the scheme and quantities that require drawing or site confirmation.
 
+Create a project coverage contract before drafting:
+
+- 6-12 project-specific terms taken from the BOQ, drawings, equipment, media, locations, or production interfaces;
+- 8-16 major method terms representing the actual work packages;
+- all applicable disciplines and high-risk operations;
+- legacy project names and irrelevant disciplines that must not remain;
+- a BOQ-to-chapter matrix mapping each major scope item to method, quality, safety, resources, schedule, and acceptance content.
+
 Do not convert uncertain quantities into facts. Mark drawing-, manufacturer-, owner-, or site-controlled values for confirmation.
 
 ### 3. Build A Project-Specific Technical Logic
 
-Draft construction logic from the actual scope, not generic prose. Establish:
+Draft construction logic from the actual scope, not generic prose. Use the complete content framework in `references/content-checklist.md`; preserve the selected template's visual hierarchy while mapping all required modules into it. Establish:
 
 1. preconditions, survey, permits, shutdown, LOTO, medium evacuation, cleaning, detection, and handover;
 2. demolition and waste handling sequence;
@@ -68,7 +82,7 @@ Draft construction logic from the actual scope, not generic prose. Establish:
 5. hold points, witness points, inspection records, tests, flushing, loop checks, interlocks, no-load/load commissioning, and production handover;
 6. cross-discipline interfaces and acceptance responsibility.
 
-Use the chapter and depth rules in `references/content-checklist.md`. Narrative explanation should outweigh tables; tables should organize quantities, responsibilities, hazards, resources, checks, and schedules.
+For every major method, write preconditions, resources, sequence, verified technical parameters, quality checks, safety controls, records, and acceptance as prose under numbered headings. Apply the table-admission test in `references/table-policy.md`: use a table only when readers must compare repeated records across shared fields. Do not count copied standards, schedules, approval tables, or BOQ tables as technical depth.
 
 ### 4. Research Standards And Create Evidence
 
@@ -88,13 +102,13 @@ python scripts/archive_standard.py "<downloaded-standard.pdf>" --number "<standa
 9. Add a concise caption containing standard number, topic, PDF page, source filename, and retrieval date.
 10. Copy the applicable archived standards into the final project folder under `引用规范原文` with an index.
 
-Limit excerpts to useful evidence. Avoid turning the document into alternating blank text pages and full-page screenshots. See `references/standards-and-evidence.md`.
+Limit excerpts to useful evidence. Explain the project's application before or after every excerpt. Keep at least 4,000 narrative characters per standard excerpt and avoid alternating text pages with full-page screenshots. See `references/standards-and-evidence.md`.
 
 Never silently replace a library PDF. The archive script stores by hash, preserves conflicting editions, and updates `standards/index.json`. Treat new or changed library files as pending Git changes; report them before any future commit or push.
 
 ### 5. Create Visuals Only Where They Help
 
-Use drawing crops, site photographs, or generated technical schematics for complex routing, lifting, PPH fusion, process flow, temporary protection, or emergency evacuation.
+Use drawing crops, site photographs, or generated technical schematics for complex routing, lifting, PPH fusion, process flow, temporary protection, or emergency evacuation. Prefer 2-6 useful technical figures for a normal full scheme when the scope supports them; never add decorative filler.
 
 For generated visuals:
 
@@ -109,11 +123,13 @@ For generated visuals:
 1. Start from the supplied or bundled template.
 2. Use run-level text replacement. Do not use `paragraph.text = ...` on retained template paragraphs.
 3. Do not run a whole-document sanitizer or style normalizer.
-4. Keep the cover, approval page, contents page, page numbering, and chapter hierarchy.
+4. Keep the cover, approval page, contents page, page numbering, and chapter hierarchy. Do not delete page breaks, force approval-table row heights, rewrite fixed approval labels, change cell margins, or modify front-matter paragraph alignment.
 5. Put the detailed schedule in a landscape final section.
 6. Use stable table widths, repeating header rows, non-splitting rows, restrained header shading, and thin borders.
 7. Keep screenshots legible and captions attached to their figures.
 8. Avoid orphan headings, nearly blank pages, stretched images, and tables that dominate the narrative.
+9. Rebuild the body from the complete framework. Do not retain an old project's body merely because its cover and approval page are being reused.
+10. Keep normal body tables to a target of 6-10 beyond fixed front matter; this is a ceiling target, not a quota. Combine related resource or inspection data instead of creating many small tables. Convert prose-heavy cells into numbered paragraphs.
 
 ### 7. Build The Schedule
 
@@ -129,17 +145,20 @@ For generated visuals:
 1. Update contents, fields, page numbers, and pagination in Word.
 2. Export the DOCX to PDF. Use `scripts/export_docx_word.ps1` on Windows when Word COM is available.
 3. Render every PDF page to PNG and inspect contact sheets plus critical pages at full size.
-4. Run `scripts/audit_docx.py` with required project terms, forbidden legacy terms, and expected font.
-5. Check the DOCX ZIP package for corruption.
-6. Confirm all output files and archived standard PDFs exist.
-7. Iterate until `references/verification.md` passes.
+4. Run `scripts/audit_front_matter.py` against the exact selected template and the final DOCX. Treat format, structure, style, header, or footer drift as a delivery blocker; review the reported text changes to confirm they are approved variables only.
+5. Run `scripts/audit_docx.py` with required project terms, forbidden legacy terms, and the selected template's font rules.
+6. Run `scripts/audit_scheme_depth.py` with the chosen profile, 6-12 project terms, 8-16 method terms, and forbidden legacy terms. Treat any failure as a delivery blocker.
+7. Check the DOCX ZIP package for corruption.
+8. Confirm all output files and archived standard PDFs exist.
+9. Iterate until `references/verification.md` passes. Never lower a threshold to make an incomplete document pass; improve the document or record a user-approved exception.
 
 ## Example Invocations
 
-- `用 $site-construction-scheme 按我们之前的模板，根据这个清单做施工方案，工期8月7日至12月31日。`
+- `用 $site-construction-scheme 按冷轧厂版式，根据这个清单做完整施工方案，工期8月7日至12月31日。`
+- `用 $site-construction-scheme 按条材厂封面审批表和字体版式，根据这个清单做完整施工方案。`
 - `用 $site-construction-scheme 修改这份别人编的方案，人员不要改，补规范原文截图、危险源和应急预案。`
 - `用 $site-construction-scheme 把专项吊装方案统一格式后并入原施工方案，正文只改为方正仿宋_GB2312，字号不要变。`
 
 ## Handoff
 
-Report the final DOCX path, page count, inclusive duration, standards archived, diagrams inserted, and validation performed. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft as a completed deliverable.
+Report the final DOCX path, selected template style, depth profile, page count, narrative character count, chapter and method counts, image/table balance, inclusive duration, standards archived, diagrams inserted, and validation performed. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft or failed depth audit as a completed deliverable.

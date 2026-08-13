@@ -1,7 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-07T02:19:50.551676+00:00",
+  "updated_at": "2026-08-12T09:02:47.428740+00:00",
   "standards": [
+    {
+      "number": "CJJ 82-2012",
+      "title": "园林绿化工程施工及验收规范",
+      "filename": "CJJ82-2012_园林绿化工程施工及验收规范.pdf",
+      "sha256": "667b2b636e59d49912de91b7482271aa47e08eda163c2dd2336e6cba6708f46b",
+      "size_bytes": 4004537,
+      "pages": 95,
+      "status": "current-verified",
+      "sources": [
+        {
+          "url": "https://jjc.imau.edu.cn/__local/D/0A/5A/5ADDD4BC615571228A22F1DDC8E_3FE5E72F_3D1AB9.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "热轧厂操控中心景观提升项目"
+      ],
+      "notes": [
+        "现行状态经北京市园林绿化局2024年标准体系核验"
+      ]
+    },
     {
       "number": "GB 30871-2022",
       "title": "危险化学品企业特殊作业安全规范",
@@ -46,6 +67,44 @@
       ]
     },
     {
+      "number": "GB 50169-2016",
+      "title": "电气装置安装工程接地装置施工及验收规范",
+      "filename": "GB50169-2016_电气装置安装工程接地装置施工及验收规范.pdf",
+      "sha256": "30b1f8ba757f0a541db88e4e7e45f7ae5308d432e59c3ec271a88ba429e006c0",
+      "size_bytes": 2853644,
+      "pages": 56,
+      "status": "current-verified",
+      "sources": [
+        {
+          "url": "https://yjgl.tj.gov.cn/ZWFW5050/BZ2939/GJBZ6056/202011/W020201112597269616132.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "热轧厂操控中心景观提升项目"
+      ],
+      "notes": []
+    },
+    {
+      "number": "GB 50204-2015",
+      "title": "混凝土结构工程施工质量验收规范",
+      "filename": "GB50204-2015_混凝土结构工程施工质量验收规范.pdf",
+      "sha256": "d71aac089181de2c2fccba9d2efcdd8568b397e4937b52079179fde76b2ad9cc",
+      "size_bytes": 4653870,
+      "pages": 140,
+      "status": "current-verified",
+      "sources": [
+        {
+          "url": "https://jncc.jinan.gov.cn/attach/0/19505f327ed4405f85dc29a809a5cf3d.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "热轧厂操控中心景观提升项目"
+      ],
+      "notes": []
+    },
+    {
       "number": "GB 50205-2020",
       "title": "钢结构工程施工质量验收标准",
       "filename": "GB50205-2020_钢结构工程施工质量验收标准.pdf",
@@ -65,6 +124,44 @@
       "notes": [
         "从本对话既有项目工作库归档"
       ]
+    },
+    {
+      "number": "GB 50209-2010",
+      "title": "建筑地面工程施工质量验收规范",
+      "filename": "GB50209-2010_建筑地面工程施工质量验收规范.pdf",
+      "sha256": "724c44eba3e1ba7ec147efcfbd93f098e53e334d4538cbfafeef3aaa442e9167",
+      "size_bytes": 415014,
+      "pages": 23,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://w.sldchina.cn/ueditor/php/upload/file/20190328/1553764818118518.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
+    },
+    {
+      "number": "GB 50210-2018",
+      "title": "建筑装饰装修工程质量验收标准",
+      "filename": "GB50210-2018_建筑装饰装修工程质量验收标准.pdf",
+      "sha256": "1304fc937241f08147e0f36a211970c09d1551c2340dcf5e09cb1bb37719cb04",
+      "size_bytes": 6322559,
+      "pages": 136,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://jncc.jinan.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileName=9d0c7e1be25747879ba1fe1771616ebc.pdf&fileUrl=n9s7FT%2FT21J6Ntg6aan3xDmP2b3NP5aKuPuvnTGi6yxzRmX8shr0XN8bDYpMeWRnWiO9ZCbik4tUuipSCTppDsURjZLJiBCs22xcj53zeyT46EmM5560Tzy95VdbS7JJ",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
     },
     {
       "number": "GB 50212-2014",
@@ -109,6 +206,46 @@
       ]
     },
     {
+      "number": "GB 50268-2008",
+      "title": "给水排水管道工程施工及验收规范",
+      "filename": "GB50268-2008_给水排水管道工程施工及验收规范.pdf",
+      "sha256": "baebf1844c2d14b3197f4971b676b6580b249aaf94a3bdf8ba949658e2f83842",
+      "size_bytes": 922393,
+      "pages": 105,
+      "status": "current-with-strong-clauses-replaced",
+      "sources": [
+        {
+          "url": "https://www.ytzg.com.cn/public/uploads/file/201709/1506676843937318.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "热轧厂操控中心景观提升项目"
+      ],
+      "notes": [
+        "现行使用，相关强制性条文按GB 55026-2022调整"
+      ]
+    },
+    {
+      "number": "GB 50303-2015",
+      "title": "建筑电气工程施工质量验收规范",
+      "filename": "GB50303-2015_建筑电气工程施工质量验收规范.pdf",
+      "sha256": "73611f688c18c2afae0fd034d622a1d42c14ca991a73fc58f4ba09eff93aaee1",
+      "size_bytes": 4134914,
+      "pages": 158,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://www.jsqzgc.com/ueditor/php/upload/file/20240402/1712049995983446.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
+    },
+    {
       "number": "GB 55009-2021",
       "title": "燃气工程项目规范",
       "filename": "GB55009-2021.pdf",
@@ -128,6 +265,63 @@
       "notes": [
         "从本对话既有项目工作库归档"
       ]
+    },
+    {
+      "number": "GB 55023-2022",
+      "title": "施工脚手架通用规范",
+      "filename": "GB55023-2022_施工脚手架通用规范.pdf",
+      "sha256": "2df7d66e1a22f3992cbe477dd27a1b61f3da96dc2b411d72d6bcb6c60b57e1d3",
+      "size_bytes": 2942032,
+      "pages": 20,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://cgj.dazhou.gov.cn/uploadfile/1/Attachment/06549cb65a.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
+    },
+    {
+      "number": "GB 55024-2022",
+      "title": "建筑电气与智能化通用规范",
+      "filename": "GB55024-2022_建筑电气与智能化通用规范.pdf",
+      "sha256": "da14cd7f53afbb0b223871036fb7a89ade50219905c81f4184c97e1757a3ea56",
+      "size_bytes": 6745787,
+      "pages": 45,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://szwb.sz.gov.cn/attachment/0/998/998037/9913357.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
+    },
+    {
+      "number": "GB 55032-2022",
+      "title": "建筑与市政工程施工质量控制通用规范",
+      "filename": "GB55032-2022_建筑与市政工程施工质量控制通用规范.pdf",
+      "sha256": "42950e7c080e513c10ba1d4ecb41c1188b8ee0155b122424b6cfa33b03e69e97",
+      "size_bytes": 4877659,
+      "pages": 35,
+      "status": "current-mandatory",
+      "sources": [
+        {
+          "url": "https://zjj.sm.gov.cn/xxgk/fgwj/jsbz/202209/P020220909632509110237.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "热轧厂操控中心景观提升项目"
+      ],
+      "notes": []
     },
     {
       "number": "GB 55034-2022",
@@ -170,6 +364,25 @@
       "notes": [
         "从本对话既有项目工作库归档"
       ]
+    },
+    {
+      "number": "GB 55037-2022",
+      "title": "建筑防火通用规范",
+      "filename": "GB55037-2022_建筑防火通用规范.pdf",
+      "sha256": "cd70e13878daf764116c2a62d0f3f3519c6e3cb65ae8e80b529e54b66b1ff053",
+      "size_bytes": 4568883,
+      "pages": 138,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://www.gkd.edu.cn/jzgcxy/upload/files/2025/6/b9b281c291fa53b5.pdf",
+          "retrieved_on": "2026-08-12"
+        }
+      ],
+      "projects": [
+        "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
+      ],
+      "notes": []
     },
     {
       "number": "GB/T 20801.1-2025",
@@ -317,6 +530,27 @@
       ],
       "notes": [
         "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "TSG D7006-2020",
+      "title": "压力管道监督检验规则",
+      "filename": "TSGD7006-2020_压力管道监督检验规则.pdf",
+      "sha256": "a298a7b0956d658fedfdfd79c43d86620a8d5d71e4a024f65b06245d5c0757d7",
+      "size_bytes": 526048,
+      "pages": 41,
+      "status": "retrieved",
+      "sources": [
+        {
+          "url": "https://www.gov.cn/zhengce/zhengceku/2020-05/28/5515546/files/00500c24ffc743fc8add6a6a9dd7dcc9.pdf",
+          "retrieved_on": "2026-08-07"
+        }
+      ],
+      "projects": [
+        "条材厂型材除鳞系统改造"
+      ],
+      "notes": [
+        "甲方审查意见要求补充压力管道施工监督检验要求"
       ]
     },
     {

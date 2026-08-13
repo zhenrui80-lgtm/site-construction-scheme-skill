@@ -10,3 +10,7 @@ render/
 pages/
 contact_sheets/
 node_modules/
+# Task-local QA artifacts
+*.depth-audit.json
+*.docx-audit.json
+*.front-matter-audit.json

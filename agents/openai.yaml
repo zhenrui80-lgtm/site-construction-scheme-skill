@@ -1,4 +1,4 @@
 interface:
   display_name: "现场施工方案 Skill"
-  short_description: "按工程量清单和既定模板编制专业现场施工方案并完成排版校核"
-  default_prompt: "使用 $site-construction-scheme 分析项目资料并编制含规范原文截图、示意图、危险源、应急预案和进度计划的专业现场施工方案。"
+  short_description: "按冷轧厂或条材厂版式编制完整、专项、可审查的现场施工方案"
+  default_prompt: "使用 $site-construction-scheme 选择冷轧厂或条材厂封面审批版式，分析项目资料并编制正文充实、专项工法完整、图文比例合理，且通过自动深度和版式验收的专业施工方案。"

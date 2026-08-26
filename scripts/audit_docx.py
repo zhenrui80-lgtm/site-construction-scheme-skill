@@ -6,6 +6,9 @@ from collections import Counter
 from pathlib import Path
 
 from docx import Document
+from docx.oxml.ns import qn
+from docx.table import Table
+from docx.text.paragraph import Paragraph
 
 
 def all_paragraphs(document):
@@ -27,33 +30,92 @@ def run_font_names(run):
     return [rpr.rFonts.get(namespace + key) for key in ("ascii", "hAnsi", "eastAsia", "cs") if rpr.rFonts.get(namespace + key)]
 
 
+def style_font_names(paragraph):
+    style = paragraph.style
+    if style is None:
+        return []
+    rpr = style.element.rPr
+    if rpr is None or rpr.rFonts is None:
+        return [style.font.name] if style.font.name else []
+    namespace = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    names = [rpr.rFonts.get(namespace + key) for key in ("ascii", "hAnsi", "eastAsia", "cs") if rpr.rFonts.get(namespace + key)]
+    return names or ([style.font.name] if style.font.name else [])
+
+
+def ordered_body_paragraphs(document):
+    for child in document.element.body.iterchildren():
+        if child.tag == qn("w:p"):
+            yield Paragraph(child, document)
+        elif child.tag == qn("w:tbl"):
+            table = Table(child, document)
+            for row in table.rows:
+                for cell in row.cells:
+                    yield from cell.paragraphs
+
+
+def paragraphs_after_marker(document, marker, occurrence):
+    hits = 0
+    found = False
+    result = []
+    for paragraph in ordered_body_paragraphs(document):
+        if marker in paragraph.text:
+            hits += 1
+            if hits == occurrence:
+                found = True
+        if found:
+            result.append(paragraph)
+    if not found:
+        raise ValueError(f"Body marker not found at occurrence {occurrence}: {marker}")
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description="Audit content, fonts, sections, images, and DOCX integrity.")
     parser.add_argument("docx", type=Path)
     parser.add_argument("--required", action="append", default=[])
     parser.add_argument("--forbidden", action="append", default=[])
     parser.add_argument("--expected-font")
+    parser.add_argument("--expected-body-font")
+    parser.add_argument("--allowed-font", action="append", default=[])
+    parser.add_argument("--body-start")
+    parser.add_argument("--occurrence", type=int, default=2)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
     path = args.docx.expanduser().resolve()
     document = Document(path)
     paragraphs = list(all_paragraphs(document))
+    if args.expected_body_font:
+        if not args.body_start:
+            parser.error("--expected-body-font requires --body-start")
+        font_paragraphs = paragraphs_after_marker(document, args.body_start, args.occurrence)
+        expected_font = args.expected_body_font
+        font_scope = "body"
+    else:
+        font_paragraphs = paragraphs
+        expected_font = args.expected_font
+        font_scope = "whole-document"
     text = "\n".join(paragraph.text for paragraph in paragraphs)
 
     font_names = Counter()
     unexpected_fonts = Counter()
     sizes = Counter()
     nonempty_runs = 0
-    for paragraph in paragraphs:
+    unresolved_font_runs = 0
+    allowed_fonts = set(args.allowed_font)
+    if expected_font:
+        allowed_fonts.add(expected_font)
+    for paragraph in font_paragraphs:
         for run in paragraph.runs:
             if not run.text.strip():
                 continue
             nonempty_runs += 1
-            names = run_font_names(run)
+            names = run_font_names(run) or style_font_names(paragraph)
+            if not names:
+                unresolved_font_runs += 1
             for name in names:
                 font_names[name] += 1
-                if args.expected_font and name != args.expected_font:
+                if expected_font and name not in allowed_fonts:
                     unexpected_fonts[name] += 1
             if run.font.size:
                 sizes[round(run.font.size.pt, 2)] += 1
@@ -71,6 +133,10 @@ def main():
         "inline_shapes": len(document.inline_shapes),
         "characters_no_space": sum(1 for character in text if not character.isspace()),
         "nonempty_runs": nonempty_runs,
+        "font_scope": font_scope,
+        "expected_font": expected_font,
+        "allowed_fonts": sorted(allowed_fonts),
+        "unresolved_font_runs": unresolved_font_runs,
         "required": required,
         "forbidden": forbidden,
         "font_names": dict(font_names),

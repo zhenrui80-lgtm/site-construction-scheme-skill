@@ -65,6 +65,7 @@ def main():
     parser.add_argument("--number")
     parser.add_argument("--title")
     parser.add_argument("--source-url")
+    parser.add_argument("--source-kind", choices=("official", "publisher", "web", "internal", "local"))
     parser.add_argument("--retrieved-on", default=date.today().isoformat())
     parser.add_argument("--status", default="retrieved")
     parser.add_argument("--project", action="append", default=[])
@@ -99,7 +100,10 @@ def main():
     source_record = {
         "url": args.source_url or "local-file",
         "retrieved_on": args.retrieved_on,
+        "kind": args.source_kind or ("web" if args.source_url else "local"),
     }
+    if source_record["kind"] in {"official", "publisher", "web"} and not args.source_url:
+        raise SystemExit(f"--source-url is required for source kind {source_record['kind']}")
 
     if existing:
         if args.refresh_metadata:
@@ -107,7 +111,6 @@ def main():
             existing["status"] = args.status
             if args.title:
                 existing["title"] = title
-        append_unique(existing.setdefault("projects", []), None)
         for project in args.project:
             append_unique(existing.setdefault("projects", []), project)
         if source_record not in existing.setdefault("sources", []):

@@ -1,4 +1,4 @@
 interface:
   display_name: "现场施工方案 Skill"
   short_description: "按冷轧厂或条材厂版式编制完整、专项、可审查的现场施工方案"
-  default_prompt: "使用 $site-construction-scheme 选择冷轧厂或条材厂封面审批版式，分析项目资料并编制正文充实、专项工法完整、图文比例合理，且通过自动深度和版式验收的专业施工方案。"
+  default_prompt: "使用 $site-construction-scheme 按 V2 项目契约选择冷轧厂或条材厂封面审批版式，分析项目资料并编制正文充实、专项工法完整、图文比例合理的专业施工方案，最终通过一键深度、版式、工期和全页渲染验收。"

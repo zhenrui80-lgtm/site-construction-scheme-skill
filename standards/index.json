@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-12T09:02:47.428740+00:00",
+  "updated_at": "2026-08-18T07:44:44.586722+00:00",
   "standards": [
     {
       "number": "CJJ 82-2012",
@@ -206,6 +206,28 @@
       ]
     },
     {
+      "number": "GB 50243-2016",
+      "title": "通风与空调工程施工质量验收规范",
+      "filename": "GB50243-2016.pdf",
+      "sha256": "ef5dbe2ce5ee585796c5cf97ce32291bdc9fd56851c9e1c409f268520ee43672",
+      "size_bytes": 14388692,
+      "pages": 304,
+      "status": "现行",
+      "sources": [
+        {
+          "kind": "web",
+          "url": "https://download.s21i.co99.net/23037910/0/0/ABUIABA9GAAgh823rQYonNuqwQQ.pdf",
+          "retrieved_on": "2026-08-18"
+        }
+      ],
+      "projects": [
+        "精整区域电气室空调安全隐患整改"
+      ],
+      "notes": [
+        "304页中文扫描版，来源附件镜像；标准现行状态与住建部公告信息已核对。"
+      ]
+    },
+    {
       "number": "GB 50268-2008",
       "title": "给水排水管道工程施工及验收规范",
       "filename": "GB50268-2008_给水排水管道工程施工及验收规范.pdf",
@@ -244,6 +266,28 @@
         "（实事工程）CP6头尾部、圆盘剪操作室及取向连续退火分厂CA13、CA14头尾操作室整修"
       ],
       "notes": []
+    },
+    {
+      "number": "GB 50738-2011",
+      "title": "通风与空调工程施工规范",
+      "filename": "GB50738-2011.pdf",
+      "sha256": "287e6feb12e68dfca4774a589850c8e15b7474e52af8b2c8e07939ac3e707c50",
+      "size_bytes": 32371355,
+      "pages": 237,
+      "status": "现行",
+      "sources": [
+        {
+          "kind": "web",
+          "url": "https://download.s21i.co99.net/23037910/0/0/ABUIABA9GAAgg7K8rQYohsjG9wQ.pdf",
+          "retrieved_on": "2026-08-18"
+        }
+      ],
+      "projects": [
+        "精整区域电气室空调安全隐患整改"
+      ],
+      "notes": [
+        "237页中文扫描版，来源附件镜像；标准现行状态与住建部公告信息已核对。"
+      ]
     },
     {
       "number": "GB 55009-2021",

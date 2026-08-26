@@ -31,9 +31,14 @@ Read only the references needed for the task:
 - Read `references/table-policy.md` before deciding whether any body content belongs in a table.
 - Read `references/quality-baseline.md` before choosing the depth profile and before final validation.
 - Read `references/standards-and-evidence.md` when standards must be researched, downloaded, or illustrated.
+- Read `references/v2-contract.md` before initializing a project or writing a project builder.
 - Read `references/verification.md` before final handoff.
 
 Use the `documents` skill for DOCX work, the `spreadsheets` skill for BOQ work, the `pdf` skill for standard PDFs, and `imagegen` when a generated bitmap schematic materially improves understanding.
+
+## V2 Operating Rule
+
+Use a project contract as the single machine-readable source of truth. Initialize every new working directory with `scripts/init_project.py`, then update `project-contract.json` after inspecting the BOQ, drawings, source scheme, and template. Project builders may import `scripts/docx_builder.py` and `scripts/project_contract.py`; they must never import or dynamically load another project's `build_scheme.py`, `PREVIOUS_UTILS`, `BASE_BUILDER`, or an absolute script path below a prior `work` directory.
 
 ## Workflow
 
@@ -45,6 +50,7 @@ Use the `documents` skill for DOCX work, the `spreadsheets` skill for BOQ work, 
 4. Inspect the accepted template before drafting. Record section orientation, margins, cover positions, approval table, contents page, heading faces and sizes, body face and size, paragraph rhythm, table sizes, footer/page number, and schedule layout.
 5. Record a short template decision in the work log: `冷轧厂`, `条材厂`, or `user-supplied`, with the source path. If the user says only the font should change, preserve all point sizes and spacing.
 6. Identify the first body-heading marker and its occurrence in the template. Use it later with `scripts/audit_front_matter.py`; do not edit front-matter page breaks, tables, margins, section properties, headers, footers, or styles to fix pagination.
+7. Run `scripts/init_project.py` and complete `project-contract.json`. Record fixed inclusive dates when supplied; when only duration is known, use the D-day schedule basis and do not invent calendar dates.
 
 ### 2. Extract And Interpret The BOQ
 
@@ -92,7 +98,7 @@ For every major method, write preconditions, resources, sequence, verified techn
 4. Immediately archive every newly downloaded standard in the versioned library:
 
 ```powershell
-python scripts/archive_standard.py "<downloaded-standard.pdf>" --number "<standard-number>" --title "<title>" --source-url "<url>" --project "<project-name>"
+python scripts/archive_standard.py "<downloaded-standard.pdf>" --number "<standard-number>" --title "<title>" --source-kind official --source-url "<url>" --project "<project-name>"
 ```
 
 5. Use the archived PDF under `standards/library`, not the temporary download, for all later work.
@@ -121,15 +127,16 @@ For generated visuals:
 ### 6. Assemble The DOCX
 
 1. Start from the supplied or bundled template.
-2. Use run-level text replacement. Do not use `paragraph.text = ...` on retained template paragraphs.
-3. Do not run a whole-document sanitizer or style normalizer.
-4. Keep the cover, approval page, contents page, page numbering, and chapter hierarchy. Do not delete page breaks, force approval-table row heights, rewrite fixed approval labels, change cell margins, or modify front-matter paragraph alignment.
-5. Put the detailed schedule in a landscape final section.
-6. Use stable table widths, repeating header rows, non-splitting rows, restrained header shading, and thin borders.
-7. Keep screenshots legible and captions attached to their figures.
-8. Avoid orphan headings, nearly blank pages, stretched images, and tables that dominate the narrative.
-9. Rebuild the body from the complete framework. Do not retain an old project's body merely because its cover and approval page are being reused.
-10. Keep normal body tables to a target of 6-10 beyond fixed front matter; this is a ceiling target, not a quota. Combine related resource or inspection data instead of creating many small tables. Convert prose-heavy cells into numbered paragraphs.
+2. Import stable helpers from `scripts/docx_builder.py`. Keep project facts in `project-contract.json`; do not inherit code or constants from a previous project builder.
+3. Use run-level text replacement. Do not use `paragraph.text = ...` on retained template paragraphs.
+4. Do not run a whole-document sanitizer or style normalizer.
+5. Keep the cover, approval page, contents page, page numbering, and chapter hierarchy. Do not delete page breaks, force approval-table row heights, rewrite fixed approval labels, change cell margins, or modify front-matter paragraph alignment.
+6. Put the detailed schedule in a landscape final section.
+7. Use stable table widths, repeating header rows, non-splitting rows, restrained header shading, and thin borders.
+8. Keep screenshots legible and captions attached to their figures.
+9. Avoid orphan headings, nearly blank pages, stretched images, and tables that dominate the narrative.
+10. Rebuild the body from the complete framework. Do not retain an old project's body merely because its cover and approval page are being reused.
+11. Keep normal body tables to a target of 6-10 beyond fixed front matter; this is a ceiling target, not a quota. Combine related resource or inspection data instead of creating many small tables. Convert prose-heavy cells into numbered paragraphs.
 
 ### 7. Build The Schedule
 
@@ -142,15 +149,17 @@ For generated visuals:
 
 ### 8. Verify Before Delivery
 
-1. Update contents, fields, page numbers, and pagination in Word.
-2. Export the DOCX to PDF. Use `scripts/export_docx_word.ps1` on Windows when Word COM is available.
-3. Render every PDF page to PNG and inspect contact sheets plus critical pages at full size.
-4. Run `scripts/audit_front_matter.py` against the exact selected template and the final DOCX. Treat format, structure, style, header, or footer drift as a delivery blocker; review the reported text changes to confirm they are approved variables only.
-5. Run `scripts/audit_docx.py` with required project terms, forbidden legacy terms, and the selected template's font rules.
-6. Run `scripts/audit_scheme_depth.py` with the chosen profile, 6-12 project terms, 8-16 method terms, and forbidden legacy terms. Treat any failure as a delivery blocker.
-7. Check the DOCX ZIP package for corruption.
-8. Confirm all output files and archived standard PDFs exist.
-9. Iterate until `references/verification.md` passes. Never lower a threshold to make an incomplete document pass; improve the document or record a user-approved exception.
+1. Run the V2 gate from the skill root:
+
+```powershell
+python scripts/validate_scheme.py "<workdir>\project-contract.json"
+```
+
+2. Treat any contract, Word export, front-matter, body-font, required-term, depth, schedule, render, DOCX-integrity, or standard-library failure as a delivery blocker.
+3. Inspect every generated contact sheet and all critical pages at full size. Automatic pixel checks supplement visual review; they do not replace it.
+4. Review `qa/validation-summary.json` and confirm that approved front-matter changes and any render exception are narrowly scoped.
+5. Confirm all output files and required archived standard PDFs exist.
+6. Iterate until `references/verification.md` passes. Never lower a threshold to make an incomplete document pass; improve the document or record a user-approved exception.
 
 ## Example Invocations
 
@@ -161,4 +170,4 @@ For generated visuals:
 
 ## Handoff
 
-Report the final DOCX path, selected template style, depth profile, page count, narrative character count, chapter and method counts, image/table balance, inclusive duration, standards archived, diagrams inserted, and validation performed. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft or failed depth audit as a completed deliverable.
+Report the final DOCX path, project-contract path, validation-summary path, selected template style, depth profile, page count, narrative character count, chapter and method counts, image/table balance, schedule basis and inclusive duration, standards archived, diagrams inserted, and validation performed. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft or failed validation gate as a completed deliverable.

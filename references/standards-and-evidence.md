@@ -28,6 +28,10 @@ If the official page only verifies status but does not supply a downloadable PDF
 
 1. Download the full standard PDF to a temporary work location.
 2. Run `scripts/archive_standard.py` immediately with standard number, title, source URL, retrieval date, and project name.
+   Set `--source-kind` to `official`, `publisher`, `web`, `internal`, or `local`.
+   Official, publisher, and web sources require `--source-url`; internal and
+   local sources must still carry honest provenance and must not be described as
+   official downloads.
 3. Confirm that `standards/index.json` contains the SHA-256, page count, archived filename, source, and project usage.
 4. Verify the archived file opens, has nonzero pages, and contains the cited clause.
 5. Render the actual clause page at readable resolution.

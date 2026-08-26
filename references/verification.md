@@ -39,11 +39,23 @@
 - The standard profile is the default; a small profile has a recorded user request and a genuinely low-risk, single-discipline basis.
 - Final project folder contains the DOCX and the `引用规范原文` library when standards were requested.
 
-Run both deterministic audits:
+For every V2 project, run the complete gate first:
+
+```powershell
+python scripts/validate_scheme.py "<workdir>\project-contract.json"
+```
+
+The command must finish with `passed: true` and write
+`<workdir>\qa\validation-summary.json`. It updates Word fields, exports PDF,
+audits the project builder, checks frozen front matter, audits only the declared body font region, verifies
+required and forbidden terms, enforces depth and schedule consistency, renders
+every PDF page, creates contact sheets, and verifies the standards library.
+
+Use the direct commands below only for migration, diagnosis, or focused repair:
 
 ```powershell
 python scripts/audit_front_matter.py "<selected-template.docx>" "<final.docx>" --body-start "<first-body-heading>" --occurrence 2 --output "<workdir>\front-matter-audit.json"
-python scripts/audit_docx.py "<final.docx>" --required "<project-name>" --forbidden "<legacy-name>" --output "<workdir>\docx-audit.json"
+python scripts/audit_docx.py "<final.docx>" --body-start "<first-body-heading>" --occurrence 2 --expected-body-font "方正仿宋_GB2312" --allowed-font "方正小标宋简体" --required "<project-name>" --forbidden "<legacy-name>" --output "<workdir>\docx-audit.json"
 python scripts/audit_scheme_depth.py "<final.docx>" --profile standard --project-term "<term-1>" --project-term "<term-2>" --method-term "<method-1>" --method-term "<method-2>" --legacy-term "<legacy-name>" --output "<workdir>\depth-audit.json"
 ```
 
@@ -56,6 +68,8 @@ The front-matter audit allows project-name, project-number, date, signatory valu
 State:
 
 - final DOCX path;
+- `project-contract.json` path and schedule basis;
+- `qa/validation-summary.json` path and overall pass result;
 - selected `冷轧厂`, `条材厂`, or user-supplied template and depth profile;
 - frozen-front-matter audit result and approved variable text changes;
 - page count;

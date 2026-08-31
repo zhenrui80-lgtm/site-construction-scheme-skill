@@ -43,8 +43,38 @@ def visible_text(element):
     return "".join(element.xpath(".//w:t/text()", namespaces=NS)).strip()
 
 
+def cell_margin_signature(element):
+    if element is None:
+        return None
+    return {
+        local_name(child): (
+            child.get(f"{{{W_NS}}}w"),
+            child.get(f"{{{W_NS}}}type"),
+        )
+        for child in element
+    }
+
+
+def remove_redundant_row_cell_margins(root):
+    """Ignore Word's duplicate row-level cell margins when they equal the table defaults."""
+    for row_properties in root.xpath(".//w:tblPrEx", namespaces=NS):
+        row_margins = row_properties.find(f"{{{W_NS}}}tblCellMar")
+        if row_margins is None:
+            continue
+        table = next(
+            (ancestor for ancestor in row_properties.iterancestors() if local_name(ancestor) == "tbl"),
+            None,
+        )
+        if table is None:
+            continue
+        table_margins = table.find(f"./{{{W_NS}}}tblPr/{{{W_NS}}}tblCellMar")
+        if cell_margin_signature(row_margins) == cell_margin_signature(table_margins):
+            row_properties.remove(row_margins)
+
+
 def normalize_xml(element):
     clone = copy.deepcopy(element)
+    remove_redundant_row_cell_margins(clone)
     for item in list(clone.iter()):
         for attribute in list(item.attrib):
             qname = etree.QName(attribute)

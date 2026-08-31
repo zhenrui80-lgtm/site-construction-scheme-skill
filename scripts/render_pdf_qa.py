@@ -62,6 +62,13 @@ def contact_sheets(page_paths, output_dir, columns=4, rows=4):
     return contacts
 
 
+def clear_generated_images(directory, pattern):
+    """Remove only artifacts produced by this renderer before a fresh QA pass."""
+    for path in directory.glob(pattern):
+        if path.is_file():
+            path.unlink()
+
+
 def audit_pdf(
     pdf_path,
     output_dir,
@@ -79,6 +86,8 @@ def audit_pdf(
     contacts_dir = output_dir / "contact_sheets"
     pages_dir.mkdir(parents=True, exist_ok=True)
     contacts_dir.mkdir(parents=True, exist_ok=True)
+    clear_generated_images(pages_dir, "page-*.png")
+    clear_generated_images(contacts_dir, "contact-*.jpg")
     document = pdfium.PdfDocument(str(pdf_path))
     metrics = []
     page_paths = []

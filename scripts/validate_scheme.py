@@ -144,6 +144,22 @@ def main():
     append_terms(docx_command, "--forbidden", coverage.get("legacy_terms", []))
     steps.append(run_command("docx-audit", docx_command))
 
+    if contract.get("special_plan", {}).get("type") == "lifting":
+        steps.append(
+            run_command(
+                "lifting-plan-audit",
+                [
+                    sys.executable,
+                    str(ROOT / "audit_lifting_plan.py"),
+                    str(contract_path),
+                    "--docx",
+                    str(docx),
+                    "--output",
+                    str(qa_dir / "lifting-plan-audit.json"),
+                ],
+            )
+        )
+
     depth_output = qa_dir / "depth-audit.json"
     depth_command = [
         sys.executable,

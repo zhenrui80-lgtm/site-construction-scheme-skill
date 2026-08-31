@@ -11,6 +11,8 @@ from pathlib import Path
 SCHEMA_VERSION = 2
 PROFILES = {"small", "standard", "complex"}
 SCHEDULE_BASES = {"fixed_dates", "day_index"}
+SPECIAL_PLAN_TYPES = {"lifting"}
+DELIVERY_MODES = {"execution_ready", "preliminary_review"}
 
 
 def load_contract(path):
@@ -81,6 +83,21 @@ def validate_contract(contract_path, contract, require_files=True):
             failures.append(f"coverage.project_terms requires at least {project_min} entries for {profile}")
         if len(coverage.get("method_terms", [])) < method_min:
             failures.append(f"coverage.method_terms requires at least {method_min} entries for {profile}")
+    special = contract.get("special_plan")
+    if special:
+        if special.get("type") not in SPECIAL_PLAN_TYPES:
+            failures.append(f"special_plan.type must be one of {sorted(SPECIAL_PLAN_TYPES)}")
+        if special.get("delivery_mode", "execution_ready") not in DELIVERY_MODES:
+            failures.append(f"special_plan.delivery_mode must be one of {sorted(DELIVERY_MODES)}")
+        if special.get("type") == "lifting" and profile != "complex":
+            failures.append("lifting special plan requires document.profile=complex")
+        if not str(special.get("data_register", "")).strip():
+            failures.append("special_plan.data_register is required")
+        try:
+            if int(special.get("minimum_omml_equations", 0)) < 1:
+                failures.append("special_plan.minimum_omml_equations must be positive")
+        except (TypeError, ValueError):
+            failures.append("special_plan.minimum_omml_equations must be an integer")
     try:
         schedule_summary(contract)
     except ValueError as exc:
@@ -90,6 +107,8 @@ def validate_contract(contract_path, contract, require_files=True):
             value = document.get(field)
             if value and not resolve_path(contract_path, value).exists():
                 failures.append(f"document.{field} does not exist: {resolve_path(contract_path, value)}")
+        if special and special.get("data_register") and not resolve_path(contract_path, special["data_register"]).exists():
+            failures.append(f"special_plan.data_register does not exist: {resolve_path(contract_path, special['data_register'])}")
     return failures
 
 

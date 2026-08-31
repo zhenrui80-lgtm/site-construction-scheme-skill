@@ -8,6 +8,7 @@ another project's build script because doing so leaks constants and formatting.
 from __future__ import annotations
 
 import copy
+import re
 from pathlib import Path
 from typing import Iterable, Sequence
 
@@ -181,6 +182,88 @@ def add_paragraphs(document, heading, paragraphs, level=2, **kwargs):
 def add_note(document, text, prefix="SCV2", font_name=BODY_FONT):
     paragraph = document.add_paragraph(style=f"{prefix}_Note")
     set_run_font(paragraph.add_run(text), 10.5, False, GRAY, font_name)
+    return paragraph
+
+
+def _omml_math_run(text, size=11, color="000000", font_name="Times New Roman"):
+    run = OxmlElement("m:r")
+    run_properties = OxmlElement("w:rPr")
+    fonts = OxmlElement("w:rFonts")
+    for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
+        fonts.set(qn(f"w:{attr}"), font_name)
+    run_properties.append(fonts)
+    for tag in ("w:sz", "w:szCs"):
+        size_element = OxmlElement(tag)
+        size_element.set(qn("w:val"), str(int(size * 2)))
+        run_properties.append(size_element)
+    if color:
+        color_element = OxmlElement("w:color")
+        color_element.set(qn("w:val"), color)
+        run_properties.append(color_element)
+    run.append(run_properties)
+    text_element = OxmlElement("m:t")
+    text_element.text = text
+    run.append(text_element)
+    return run
+
+
+def _omml_subscript(base, subscript, size=11, color="000000", font_name="Times New Roman"):
+    node = OxmlElement("m:sSub")
+    node.append(OxmlElement("m:sSubPr"))
+    base_element = OxmlElement("m:e")
+    base_element.append(_omml_math_run(base, size, color, font_name))
+    sub_element = OxmlElement("m:sub")
+    sub_element.append(_omml_math_run(subscript, size * 0.78, color, font_name))
+    node.extend((base_element, sub_element))
+    return node
+
+
+def _append_linear_omml(parent, equation, size=11, color="000000", font_name="Times New Roman"):
+    pattern = re.compile(r"([A-Za-z]+)_\{?([A-Za-z0-9,]+)\}?")
+    cursor = 0
+    for match in pattern.finditer(equation):
+        if match.start() > cursor:
+            parent.append(_omml_math_run(equation[cursor:match.start()], size, color, font_name))
+        parent.append(_omml_subscript(match.group(1), match.group(2), size, color, font_name))
+        cursor = match.end()
+    if cursor < len(equation):
+        parent.append(_omml_math_run(equation[cursor:], size, color, font_name))
+
+
+def add_omml_equation(
+    document,
+    equation,
+    explanation=None,
+    size=11,
+    color="000000",
+    font_name="Times New Roman",
+    prefix="SCV2",
+):
+    """Insert an editable Word equation with Times New Roman math runs.
+
+    Use ASCII identifiers with optional ``_{subscript}`` notation and Unicode
+    operators supplied by verified calculations. Never paste rendered formula
+    screenshots or use plain-text formulas for a lifting calculation appendix.
+    """
+    paragraph = document.add_paragraph()
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    paragraph.paragraph_format.space_before = Pt(4)
+    paragraph.paragraph_format.space_after = Pt(3)
+    math_paragraph = OxmlElement("m:oMathPara")
+    math_properties = OxmlElement("m:oMathParaPr")
+    justification = OxmlElement("m:jc")
+    justification.set(qn("m:val"), "center")
+    math_properties.append(justification)
+    math_paragraph.append(math_properties)
+    math = OxmlElement("m:oMath")
+    _append_linear_omml(math, equation, size, color, font_name)
+    math_paragraph.append(math)
+    paragraph._p.append(math_paragraph)
+    if explanation:
+        note = document.add_paragraph(style=f"{prefix}_Note")
+        note.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        set_run_font(note.add_run(explanation), 10.5, False, GRAY, BODY_FONT)
     return paragraph
 
 

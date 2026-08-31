@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-18T07:44:44.586722+00:00",
+  "updated_at": "2026-08-29T00:16:10.935615+00:00",
   "standards": [
     {
       "number": "CJJ 82-2012",
@@ -545,13 +545,20 @@
         {
           "url": "local-file",
           "retrieved_on": "2026-08-07"
+        },
+        {
+          "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/20254/36b4a615ec9047308e7ddb3de30d9671.pdf",
+          "retrieved_on": "2026-08-29",
+          "kind": "official"
         }
       ],
       "projects": [
-        "条材厂型材除鳞系统改造"
+        "条材厂型材除鳞系统改造",
+        "焦化进2A煤塔料线优化改造通廊及立柱专项吊装"
       ],
       "notes": [
-        "从本对话既有项目工作库归档"
+        "从本对话既有项目工作库归档",
+        "市场监管总局官网正式修改单，自2024年11月1日起施行。"
       ]
     },
     {
@@ -566,14 +573,21 @@
         {
           "url": "local-file",
           "retrieved_on": "2026-08-07"
+        },
+        {
+          "url": "https://www.samr.gov.cn/cms_files/filemanager/1647978232/attach/20239/1cbb91448dc144e9aa36e3a4fe30869d.pdf",
+          "retrieved_on": "2026-08-29",
+          "kind": "official"
         }
       ],
       "projects": [
         "条材厂型材除鳞系统改造",
-        "101机组酸循环系统和酸雾系统综合改造"
+        "101机组酸循环系统和酸雾系统综合改造",
+        "焦化进2A煤塔料线优化改造通廊及立柱专项吊装"
       ],
       "notes": [
-        "从本对话既有项目工作库归档"
+        "从本对话既有项目工作库归档",
+        "市场监管总局官网正式文本，自2024年1月1日起施行；执行时同时采用第1号修改单。"
       ]
     },
     {
@@ -616,6 +630,28 @@
       ],
       "notes": [
         "从本对话既有项目工作库归档"
+      ]
+    },
+    {
+      "number": "应急管理部令第13号",
+      "title": "工贸企业有限空间作业安全规定",
+      "filename": "工贸企业有限空间作业安全规定-应急管理部令第13号.pdf",
+      "sha256": "5a49163c7d3f1b4362f77c965b8a6736c5cee79801d63c7d8c5038de2380e6b3",
+      "size_bytes": 130745,
+      "pages": 6,
+      "status": "现行",
+      "sources": [
+        {
+          "url": "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/gz11/202312/P020231211365582336279.pdf",
+          "retrieved_on": "2026-08-26",
+          "kind": "official"
+        }
+      ],
+      "projects": [
+        "钢渣作业部湿电除尘器功能恢复"
+      ],
+      "notes": [
+        "应急管理部官网6页正式文本，自2024年1月1日起施行。"
       ]
     }
   ]

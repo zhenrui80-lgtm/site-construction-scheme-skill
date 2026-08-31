@@ -1,6 +1,6 @@
 ---
 name: site-construction-scheme
-description: Create and revise full-depth professional Chinese metallurgical or industrial construction-scheme DOCX deliverables from BOQ spreadsheets, drawings, photos, existing schemes, and fixed schedules. Use for 施工方案、施工组织设计、专项方案、清单编方案、模板改方案、规范原文截图、危险源辨识、应急预案、施工进度计划, especially when the user requires the established 冷轧厂 or 条材厂 cover and approval layout, preserved font hierarchy, BOQ-specific methods, downloaded standard-PDF excerpts, generated construction diagrams, and automatic depth plus render verification.
+description: Create and revise full-depth professional Chinese metallurgical or industrial construction-scheme DOCX deliverables from BOQ spreadsheets, drawings, photos, existing schemes, and fixed schedules. Use for 施工方案、施工组织设计、专项方案、专项吊装方案、清单编方案、模板改方案、规范原文截图、危险源辨识、应急预案、施工进度计划, especially when the user requires the established 冷轧厂 or 条材厂 cover and approval layout, preserved font hierarchy, BOQ-specific methods, editable lifting calculations, exact crane load-chart evidence, downloaded standard-PDF excerpts, generated construction diagrams, and automatic depth plus render verification.
 ---
 
 # 现场施工方案 Skill
@@ -32,6 +32,7 @@ Read only the references needed for the task:
 - Read `references/quality-baseline.md` before choosing the depth profile and before final validation.
 - Read `references/standards-and-evidence.md` when standards must be researched, downloaded, or illustrated.
 - Read `references/v2-contract.md` before initializing a project or writing a project builder.
+- Read `references/lifting-special-plan.md` for any standalone lifting plan or lifting chapter that selects a crane, lifting points, rigging, spreader beam, outriggers, or a crane standing position.
 - Read `references/verification.md` before final handoff.
 
 Use the `documents` skill for DOCX work, the `spreadsheets` skill for BOQ work, the `pdf` skill for standard PDFs, and `imagegen` when a generated bitmap schematic materially improves understanding.
@@ -89,6 +90,16 @@ Draft construction logic from the actual scope, not generic prose. Use the compl
 6. cross-discipline interfaces and acceptance responsibility.
 
 For every major method, write preconditions, resources, sequence, verified technical parameters, quality checks, safety controls, records, and acceptance as prose under numbered headings. Apply the table-admission test in `references/table-policy.md`: use a table only when readers must compare repeated records across shared fields. Do not count copied standards, schedules, approval tables, or BOQ tables as technical depth.
+
+### 3A. Activate The Lifting Special-Plan Mode
+
+For a standalone lifting plan, major lifting chapter, crane selection, or lifting calculation, initialize with `--special-plan lifting`, force the `complex` profile, and follow `references/lifting-special-plan.md`. Complete `lifting-data-register.json` before drafting calculations. Treat each lifted component and each governing crane configuration as a separate traceable record.
+
+Do not use web search to invent project-specific component weight, center of gravity, ground bearing capacity, lifting-point geometry, or standing coordinates. Web research may obtain current official standards and the exact manufacturer's manual or load chart. If owner, drawing, fabrication, weighing, geotechnical, survey, or site data remain unavailable, list the missing inputs and block an execution-ready issue.
+
+Use `add_omml_equation()` from `scripts/docx_builder.py` for the calculation appendix. Every formula must be an editable Word OMML equation; Latin letters, Greek symbols, numbers, units, and mathematical operators use Times New Roman. Show input source, symbol definition, formula, numeric substitution, result, acceptance criterion, conclusion, and independent checker. Plain-text formula substitutes and formula screenshots do not satisfy this requirement.
+
+The lifting audit requires component actual weight and center-of-gravity evidence; exact crane manufacturer, model, counterweight, boom, outrigger, radius, rated capacity, and original load-chart page; complete checks for design load, crane capacity, rigging, lifting points, spreader beam when used, maximum outrigger reaction, ground bearing, standing setout, hook height and clearance, trial lift, and wind control; plus verified lifting-point, standing, outrigger, and rigging figures. `scripts/validate_scheme.py` automatically runs `scripts/audit_lifting_plan.py` and blocks delivery when this evidence is missing.
 
 ### 4. Research Standards And Create Evidence
 
@@ -155,7 +166,7 @@ For generated visuals:
 python scripts/validate_scheme.py "<workdir>\project-contract.json"
 ```
 
-2. Treat any contract, Word export, front-matter, body-font, required-term, depth, schedule, render, DOCX-integrity, or standard-library failure as a delivery blocker.
+2. Treat any contract, lifting-data, Word-equation, Word export, front-matter, body-font, required-term, depth, schedule, render, DOCX-integrity, or standard-library failure as a delivery blocker.
 3. Inspect every generated contact sheet and all critical pages at full size. Automatic pixel checks supplement visual review; they do not replace it.
 4. Review `qa/validation-summary.json` and confirm that approved front-matter changes and any render exception are narrowly scoped.
 5. Confirm all output files and required archived standard PDFs exist.
@@ -167,7 +178,8 @@ python scripts/validate_scheme.py "<workdir>\project-contract.json"
 - `用 $site-construction-scheme 按条材厂封面审批表和字体版式，根据这个清单做完整施工方案。`
 - `用 $site-construction-scheme 修改这份别人编的方案，人员不要改，补规范原文截图、危险源和应急预案。`
 - `用 $site-construction-scheme 把专项吊装方案统一格式后并入原施工方案，正文只改为方正仿宋_GB2312，字号不要变。`
+- `用 $site-construction-scheme 根据构件图、现场总图和吊机资料编制专项吊装方案，逐件核对实重与重心，完成吊点、平衡梁、支腿反力、地基承载力和站位放样计算。`
 
 ## Handoff
 
-Report the final DOCX path, project-contract path, validation-summary path, selected template style, depth profile, page count, narrative character count, chapter and method counts, image/table balance, schedule basis and inclusive duration, standards archived, diagrams inserted, and validation performed. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft or failed validation gate as a completed deliverable.
+Report the final DOCX path, project-contract path, validation-summary path, selected template style, depth profile, page count, narrative character count, chapter and method counts, image/table balance, schedule basis and inclusive duration, standards archived, diagrams inserted, and validation performed. For lifting plans, also report the lifting-data-register path, exact crane model/configuration, governing component and design load, OMML equation count, and lifting audit result. Mention unresolved owner/drawing/site confirmations plainly. Do not present a draft or failed validation gate as a completed deliverable.

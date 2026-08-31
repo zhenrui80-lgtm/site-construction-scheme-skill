@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 from docx import Document
@@ -33,6 +34,19 @@ class DocxBuilderTests(unittest.TestCase):
         builder.replace_paragraph_text_preserve_runs(paragraph, "工程名称：新项目")
         self.assertEqual(len(paragraph.runs), before)
         self.assertEqual(paragraph.text, "工程名称：新项目")
+
+    def test_omml_equation_is_editable_and_uses_times_new_roman(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "equation.docx"
+            document = Document()
+            builder.configure_body_styles(document)
+            builder.add_omml_equation(document, "eta = Q_{d} / Q_{r} = 0.80", "起重能力利用率")
+            document.save(path)
+            with zipfile.ZipFile(path) as archive:
+                xml = archive.read("word/document.xml").decode("utf-8")
+        self.assertIn("<m:oMath", xml)
+        self.assertIn("Times New Roman", xml)
+        self.assertNotIn("Cambria Math", xml)
 
 
 if __name__ == "__main__":

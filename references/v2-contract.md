@@ -19,6 +19,17 @@ For a duration without confirmed calendar dates:
 python scripts/init_project.py "<workdir>" --project "<project>" --template-style 冷轧厂 --duration-days 20 --profile standard
 ```
 
+For a lifting special plan:
+
+```powershell
+python scripts/init_project.py "<workdir>" --project "<project>" --template-style 冷轧厂 --duration-days 20 --special-plan lifting
+```
+
+Lifting mode forces the `complex` profile and creates an incomplete
+`lifting-data-register.json`. Complete it from controlled project, survey,
+ground, crane-manufacturer, and standard sources before final validation. See
+`references/lifting-special-plan.md`.
+
 The initializer creates `intake`, `assets`, `output`, and `qa`, copies the
 selected template, and writes `project-contract.json`. Update the contract after
 BOQ and drawing analysis and before document generation.
@@ -36,6 +47,9 @@ BOQ and drawing analysis and before document generation.
   and whether the final schedule page must be landscape.
 - `standards`: versioned library root, required archived PDFs, verification
   switch, and optional strict metadata validation.
+- `special_plan`: optional specialist mode, delivery mode, data-register path,
+  and minimum editable Word-equation count. `lifting` activates the dedicated
+  lifting-data and equation audit.
 
 The coverage minimums are profile-dependent and enforced by
 `scripts/project_contract.py`. The default `standard` profile requires at least
@@ -64,7 +78,8 @@ python scripts/validate_scheme.py "<workdir>\project-contract.json"
 The command updates Word fields, exports PDF, audits frozen front matter,
 checks body-scoped font and required/forbidden terms, enforces depth and
 schedule consistency, renders every PDF page, creates contact sheets, verifies
-the standard library, and writes `qa/validation-summary.json`.
+the standard library, runs the lifting evidence/equation gate when activated,
+and writes `qa/validation-summary.json`.
 
 `--skip-word-export` exists for automated regression tests with an explicitly
 declared existing PDF. Do not use it for delivery validation.

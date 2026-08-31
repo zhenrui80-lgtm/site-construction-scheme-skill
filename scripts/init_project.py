@@ -19,6 +19,7 @@ def main():
     template_group.add_argument("--template", type=Path)
     template_group.add_argument("--template-style", choices=("冷轧厂", "条材厂"))
     parser.add_argument("--profile", choices=("small", "standard", "complex"), default="standard")
+    parser.add_argument("--special-plan", choices=("lifting",))
     parser.add_argument("--contractor", default="武汉兴达建筑安装工程有限责任公司")
     parser.add_argument("--start-date")
     parser.add_argument("--finish-date")
@@ -57,6 +58,7 @@ def main():
             "basis_note": args.basis_note or "实际日历日期以建设单位开工或停机移交通知换算。",
         }
 
+    profile = "complex" if args.special_plan == "lifting" else args.profile
     contract = {
         "schema_version": 2,
         "project": {"name": args.project, "contractor": args.contractor},
@@ -67,7 +69,7 @@ def main():
             "body_start": "一、编制依据及工程概况",
             "body_occurrence": 2,
             "body_font": "方正仿宋_GB2312",
-            "profile": args.profile,
+            "profile": profile,
         },
         "schedule": schedule,
         "coverage": {
@@ -91,6 +93,48 @@ def main():
             "required_files": [],
         },
     }
+    if args.special_plan == "lifting":
+        register_name = "lifting-data-register.json"
+        contract["special_plan"] = {
+            "type": "lifting",
+            "delivery_mode": "execution_ready",
+            "data_register": register_name,
+            "minimum_omml_equations": 8,
+        }
+        register = {
+            "schema_version": 1,
+            "delivery_mode": "execution_ready",
+            "components": [],
+            "crane_configurations": [],
+            "engineering_checks": {
+                name: {
+                    "status": "site_confirmation",
+                    "calculation_ref": "",
+                    "calculation_values": {},
+                    "source_refs": [],
+                }
+                for name in (
+                    "design_lifting_load",
+                    "crane_capacity",
+                    "rigging",
+                    "lifting_points",
+                    "spreader_beam",
+                    "outrigger_reaction",
+                    "ground_bearing",
+                    "station_setout",
+                    "clearance_and_hook_height",
+                    "trial_lift",
+                    "wind_control",
+                )
+            },
+            "figures": {},
+            "unresolved_items": [
+                "补齐构件逐件实重、重心及来源",
+                "补齐进场吊机精确型号、配置和原厂载荷表页",
+                "完成吊点、索具、平衡梁、支腿反力、地基承载力和站位放样复核",
+            ],
+        }
+        write_contract(workdir / register_name, register)
     output = write_contract(workdir / "project-contract.json", contract)
     print(json.dumps({"workdir": str(workdir), "contract": str(output), "template": str(template_copy)}, ensure_ascii=False))
 

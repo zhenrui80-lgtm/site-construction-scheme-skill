@@ -51,6 +51,33 @@ class ProjectContractTests(unittest.TestCase):
             failures = validate_contract(Path(directory) / "contract.json", contract, require_files=False)
         self.assertTrue(any("method_terms" in failure for failure in failures))
 
+    def test_lifting_plan_requires_complex_profile_and_register(self):
+        contract = self.base_contract()
+        contract["special_plan"] = {
+            "type": "lifting",
+            "delivery_mode": "execution_ready",
+            "data_register": "lifting-data-register.json",
+            "minimum_omml_equations": 8,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            failures = validate_contract(Path(directory) / "contract.json", contract, require_files=False)
+        self.assertTrue(any("profile=complex" in failure for failure in failures))
+
+    def test_lifting_plan_contract_accepts_complex_profile(self):
+        contract = self.base_contract()
+        contract["document"]["profile"] = "complex"
+        contract["coverage"]["project_terms"] = [f"项目{i}" for i in range(8)]
+        contract["coverage"]["method_terms"] = [f"工法{i}" for i in range(12)]
+        contract["special_plan"] = {
+            "type": "lifting",
+            "delivery_mode": "execution_ready",
+            "data_register": "lifting-data-register.json",
+            "minimum_omml_equations": 8,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            failures = validate_contract(Path(directory) / "contract.json", contract, require_files=False)
+        self.assertEqual(failures, [])
+
 
 if __name__ == "__main__":
     unittest.main()

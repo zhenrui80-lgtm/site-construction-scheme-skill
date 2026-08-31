@@ -1,0 +1,8 @@
+interface:
+  display_name: "投标施工方案"
+  short_description: "按清单与招标资料生成模板保真的投标施工方案及进度计划"
+  brand_color: "#9B1C1C"
+  default_prompt: "Use $bidding-construction-scheme to generate a template-preserving Chinese bid scheme and its matching five-sheet Excel schedule from my BOQ and tender documents."
+
+policy:
+  allow_implicit_invocation: true

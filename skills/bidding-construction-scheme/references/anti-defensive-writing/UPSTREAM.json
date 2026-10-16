@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill",
+  "commit": "82d31402caa0db1790026824399044538483171b",
+  "source_path": "skills/anti-defensive-writing/SKILL.md",
+  "source_sha256": "6f072e66f6adf813bc1b4291754f2bc07ed4e65a398359844e97bfa215a1c28e",
+  "source_hash_normalization": "UTF-8, LF; compare normalized CRLF checkouts as LF",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Adkid-Zephyr",
+  "retrieved": "2026-10-16",
+  "adaptation": "STYLE.md工程适配；UPSTREAM_SKILL.md原样保留；review_prose.py为本次新增只读辅助代码",
+  "excluded_code": {
+    "scripts/build_plugin.py": "上游插件分发打包脚本；写作不需此工具，不复制不作为运行依赖"
+  }
+}

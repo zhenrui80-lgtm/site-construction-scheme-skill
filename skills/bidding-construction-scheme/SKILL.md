@@ -5,6 +5,12 @@ description: Create or revise Chinese bid construction/service scheme deliverabl
 
 # 投标施工方案
 
+## 文字输出风格：起草与交付前审查
+
+撰写报告、方案、清单说明、表格备注或最终答复前，先读随技能内置的[非防御性写作适配](references/anti-defensive-writing/STYLE.md)。先讲有证据的结论，再说明依据、影响和执行动作；按该指南完成交付前文字审查。
+
+文字优化不得改动用户范围、数量价格、引用依据、真实缺陷、必要暂估条件、模板约束及专业验收要求。采用本地相对引用，不依赖另行安装写作插件。专业复核完成后，可用[只读文字检查器](scripts/review_prose.py)辅助检查重复套话和指定必须保留的事实；它不替代事实与工程审查。
+
 Generate a complete, reviewable Word/WPS technical scheme and its matching Excel plan. Treat every “同样的／新项目” request as a new isolated project; never inherit names, durations, BOQ quantities, paths, figures, standards status, or technical assumptions from an earlier project.
 
 ## Required resources

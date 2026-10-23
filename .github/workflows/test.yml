@@ -18,6 +18,8 @@ jobs:
       - name: Install test dependencies
         run: pip install openpyxl pillow pypdf pypdfium2 python-docx reportlab
       - name: Compile scripts
-        run: python -m compileall -q scripts tests
+        run: python -m compileall -q scripts tests skills/bidding-construction-scheme/scripts skills/bidding-construction-scheme/tests
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
+      - name: Run bidding skill tests
+        run: python -m unittest discover -s skills/bidding-construction-scheme/tests -v

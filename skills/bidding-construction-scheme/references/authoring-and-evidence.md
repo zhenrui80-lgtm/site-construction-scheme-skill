@@ -1,5 +1,7 @@
 # Technical authoring and visual evidence
 
+For the latest construction format, follow the 15-topic map in [latest-format.md](latest-format.md). Chapter 1 depth remains mandatory; the 200-page target is not a reason to omit BOQ methods. Remove duplicate generic text before considering any exception. Chapter 1 figures, the Word schedule figure (appendix 4), and the site-layout figure (appendix 5) serve distinct needs; do not substitute one generic workflow graphic for all three.
+
 ## Chapter 1 depth
 
 Chapter 1 must be a project-specific method statement, not a generic catalogue. Normalize the BOQ into work packages and cover every material scope. For each method include:

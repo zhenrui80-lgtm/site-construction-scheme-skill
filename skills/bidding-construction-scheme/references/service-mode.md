@@ -8,6 +8,8 @@ Service signals include staffing/attendance, inspection, operation, maintenance 
 
 ## Service technical-bid structure
 
+Use the latest body typography/page target unless the service tender specifies otherwise, but do not force 15 construction chapters and six construction appendices onto a service assignment. Build a service requirement map and equivalent read-only format/page audit. The construction-only `audit_latest_format.py` cannot certify service-topic completeness; report that boundary rather than waive construction checks silently.
+
 Adapt the template while preserving its formatting contract. Cover:
 
 - understanding of objectives, scope, sites, interfaces, exclusions, and service period;

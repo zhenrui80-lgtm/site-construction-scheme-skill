@@ -2,6 +2,16 @@
 
 All automated checks are necessary but not sufficient. Record results in QA artifacts and inspect the rendered output.
 
+## Latest-format release gate
+
+- Verify `latest-20261023` manifest and source roles. Never compare its variable-length output against legacy paragraph/section counts.
+- `audit_latest_format.py` checks actual final PDF count (target <=200), effective body宋体12pt/1.5, chapter/appendix titles, form schemas and placeholders. Independently review completeness: title presence is not proof of substantive content or a usable diagram.
+- Count the whole PDF unless the tender states otherwise. Source wording is a recommendation/principle, not automatic disqualification. Over-limit exceptions require reason and user confirmation; report exceptions rather than unqualified compliance.
+- Check body-style coverage so untagged prose cannot evade typography checks. Headings, TOC, captions and source tables have separate roles; no whole-document cleanup.
+- Verify appendix 1/2 source columns, appendix 3 merged stage header and unit人, appendix 4 readable schedule, appendix 5 layout and explanations, appendix 6 land area/location/time. Equipment/land facts remain evidence-backed or controlled prerequisites.
+- For technical dark bids inspect in-chapter form placement and forbidden identity in body, images, headers, properties, comments and revisions. Do not assume every tender is dark bid.
+- Latest profile: paired validator with `--structure-policy expandable --template ...`, profile auditor and protected-XML comparison. Legacy: fixed paired counts plus fidelity auditor. Record allowed changes; no blanket exemptions.
+
 ## Source and identity
 
 - source files remain byte-identical;
@@ -14,11 +24,11 @@ All automated checks are necessary but not sufficient. Record results in QA arti
 
 - DOCX is a valid ZIP package and opens with `python-docx`;
 - WPS/Word opens, updates fields/TOC, saves, and exports PDF without repair prompts;
-- expected paragraph/table/section counts remain stable for the fixed template;
+- counts remain stable for the legacy fixed template; latest-profile clones/row changes match the approved edit manifest;
 - formatting/property drift outside approved slots is zero or explicitly justified;
 - Chapter 1 covers every material BOQ package and the figure count/provenance matches the plan;
 - no old project content remains in body, tables, headers/footers, relationships, comments, or core properties;
-- no blank, unexpectedly sparse, clipped, overlapped, or orphan-heading pages exist in the full render;
+- no unintended blank/sparse, clipped, overlapped, or orphan-heading pages exist in the full render (blank reference rows/pages do not require empty project pages);
 - TOC entries and page numbers are present after field update.
 
 ## Excel package

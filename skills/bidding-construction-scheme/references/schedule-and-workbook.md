@@ -10,6 +10,10 @@ Create one `.xlsx` with exactly five visible worksheets in this order:
 
 Do not add scratch or chart-data sheets to the final workbook.
 
+## Latest Word-format linkage
+
+The six Word appendices are **not six extra Excel sheets**. Retain exactly five Excel sheets. Feed Word appendices 1–3 from the resource register, appendix 4 from the schedule/dependency data, and appendices 5–6 from the site/temporary-land register. The response index maps all 15 topics and six appendices to actual final Word locations. Material/equipment entry phases belong in Chapter 3 and the existing resource sheet, not a sixth sheet. Update page references after final Word pagination. Do not claim evaluation scores unless supplied.
+
 ## 横道进度计划
 
 - Use a fixed left register: ID, activity, work package, duration, start day, finish day, predecessor, responsibility, and remarks.

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -12,6 +13,23 @@ from docx.oxml.ns import qn
 
 
 DEFAULT_FIGURE_PARAGRAPHS = {210, 211, 247, 248, 258, 259, 270, 271, 279, 280, 288, 289}
+LEGACY_TEMPLATE_SHA256 = "A6912977145A5749AC55F53402803FCE247A028491588A425947E60E249B8B1A"
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest().upper()
+
+
+def resolve_allowed_body(template_sha256: str, explicit: set[int], disable_defaults: bool = False) -> set[int]:
+    """Never apply transport-office figure indices to a different template."""
+    allowed = set(explicit)
+    if not disable_defaults and template_sha256.upper() == LEGACY_TEMPLATE_SHA256:
+        allowed.update(DEFAULT_FIGURE_PARAGRAPHS)
+    return allowed
 
 
 def scalar(value):
@@ -207,18 +225,26 @@ def main() -> None:
         default=[],
         help="Zero-based body paragraph allowed to change paragraph/run formatting, normally a figure or caption slot",
     )
-    parser.add_argument("--no-default-figure-anchors", action="store_true")
+    parser.add_argument(
+        "--no-default-figure-anchors",
+        action="store_true",
+        help="Disable legacy figure exemptions; automatic exemptions otherwise apply only to the verified transport-office template SHA-256",
+    )
     parser.add_argument("--output", type=Path, dest="report_path")
     args = parser.parse_args()
 
-    allowed = set(args.allow_body_paragraph)
-    if not args.no_default_figure_anchors:
-        allowed.update(DEFAULT_FIGURE_PARAGRAPHS)
     template = args.template.expanduser().resolve()
     output = args.output.expanduser().resolve()
     if not template.is_file() or not output.is_file():
         raise SystemExit("template and output DOCX files must exist")
+    template_hash = sha256(template)
+    allowed = resolve_allowed_body(template_hash, set(args.allow_body_paragraph), args.no_default_figure_anchors)
     result = compare(template, output, allowed)
+    result["template_sha256"] = template_hash
+    result["default_figure_anchors_applied"] = (
+        not args.no_default_figure_anchors and template_hash == LEGACY_TEMPLATE_SHA256
+    )
+    result["explicit_allowed_body_paragraphs"] = sorted(set(args.allow_body_paragraph))
     payload = json.dumps(result, ensure_ascii=False, indent=2)
     if args.report_path:
         args.report_path.parent.mkdir(parents=True, exist_ok=True)

@@ -1,4 +1,12 @@
-# Fixed template contract
+# Template contract
+
+## Select the format profile first
+
+New construction schemes default to `latest-20261023`; read [latest-format.md](latest-format.md) and verify `assets/latest-template-manifest.json`. Its body is 宋体 12 pt / 1.5 lines, with 15 content topics and six appendix forms. Its paragraph counts are expandable and its appendix tables retain the source schema. Clone only approved body/heading/caption/data-row patterns; audit all changed structures. The latest blank template is an explicit one-time baseline migration authorized by the user's new format request, not a license to normalize finished documents.
+
+The remaining fixed-index contract below applies **only to `legacy-transport`**. Never apply those counts, offsets or figure exemptions to the new template. A newer project-specific tender/user instruction wins over either profile; record the resulting contract and re-distill new formats.
+
+## Legacy transport template
 
 ## Preservation rules
 
@@ -57,4 +65,4 @@ Outside explicitly allowed text/figure slots, compare template and output for:
 
 Treat any unexplained drift as a failure.
 
-Run `scripts/audit_template_fidelity.py <template.docx> <output.docx>`. Its default allowed run-count changes are the six known figure anchors; override those defaults only when a changed template or approved figure plan has been inspected.
+Run `scripts/audit_template_fidelity.py <template.docx> <output.docx>`. Default figure/paired-caption exemptions apply only when the legacy SHA matches. Other templates receive no automatic old-index exemptions; add only individually inspected explicit `--allow-body-paragraph` locations.

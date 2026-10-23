@@ -1,0 +1,14 @@
+{
+  "profile": "latest-20261023",
+  "source_sha256": "13071E4219EED575DB6FCB0777DCEBDFE6A969AA6CBBADA1DC120CCF47E61262",
+  "artifacts": {
+    "format_reference_20261023.docx": {
+      "sha256": "F48076F66351634B2C8FC57A9C24A621E49820226776BCBE749D9CF781CD4057",
+      "bytes": 23389
+    },
+    "template_construction_organization_20261023.docx": {
+      "sha256": "325A61F0CB0388800162180A7DF33D8586C8B6E90EAF26B71DFB4775F3059DCA",
+      "bytes": 22281
+    }
+  }
+}

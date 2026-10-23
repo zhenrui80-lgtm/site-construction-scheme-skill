@@ -1,0 +1,34 @@
+{
+  "profile": "latest-20261023",
+  "source_doc_sha256": "F4A5040AE628E31903751A7CD44816C05547E536B53B3A746F46947BDBF01F4F",
+  "converted_source_sha256": "13071E4219EED575DB6FCB0777DCEBDFE6A969AA6CBBADA1DC120CCF47E61262",
+  "source_image_sha256": "72C6E56BA39A45AB8C77140183BD2D4985E5B9C54E62448E490E222224874EB2",
+  "source_wording": "施工组织设计原则上不要超过200页，建议字体为宋体，字号为小四，1.5倍行距。",
+  "body": {"style": "BiddingBody", "font": "宋体", "size_pt": 12, "line_spacing": 1.5},
+  "page_policy": {"target_max": 200, "basis": "entire final rendered PDF including cover, TOC and appendices unless tender explicitly excludes them", "strength": "in_principle", "exception_requires_reason": true},
+  "chapters": [
+    {"number": 1, "title": "施工方案及技术措施"},
+    {"number": 2, "title": "质量保证措施和创优计划"},
+    {"number": 3, "title": "施工总进度计划及保证措施"},
+    {"number": 4, "title": "施工安全措施计划"},
+    {"number": 5, "title": "文明施工措施计划"},
+    {"number": 6, "title": "施工场地治安保卫管理计划"},
+    {"number": 7, "title": "施工环保措施计划"},
+    {"number": 8, "title": "特殊气候条件下施工方案"},
+    {"number": 9, "title": "施工现场总平面布置"},
+    {"number": 10, "title": "拟分包的非主体和非关键性工作"},
+    {"number": 11, "title": "成品保护和工程保修工作的管理措施和承诺"},
+    {"number": 12, "title": "紧急情况处理预案及抵抗风险措施"},
+    {"number": 13, "title": "总包管理及专业分包配合协调管理服务方案"},
+    {"number": 14, "title": "与发包人项目管理单位监理及设计人的配合"},
+    {"number": 15, "title": "招标文件规定的其他内容"}
+  ],
+  "appendices": [
+    {"number": 1, "title": "拟投入本工程的主要施工设备表", "chapter": 3, "columns": ["序号", "设备名称", "型号规格", "数量", "国别产地", "制造年份", "额定功率（KW）", "生产能力", "用于施工部位", "备注"]},
+    {"number": 2, "title": "拟配备本工程的试验和检测仪器设备表", "chapter": 3, "columns": ["序号", "仪器设备名称", "型号规格", "数量", "国别产地", "制造年份", "已使用台时数", "用途", "备注"]},
+    {"number": 3, "title": "劳动力计划表", "chapter": 3, "column_count": 8, "merged_header": "按工程施工阶段投入劳动力情况", "first_header": "工种", "unit": "人"},
+    {"number": 4, "title": "计划开、竣工日期和施工进度网络图", "chapter": 3, "kind": "network_or_gantt"},
+    {"number": 5, "title": "施工总平面图", "chapter": 9, "kind": "site_layout"},
+    {"number": 6, "title": "临时用地表", "chapter": 9, "columns": ["用途", "面积（M2）", "位置", "需用时间"]}
+  ]
+}

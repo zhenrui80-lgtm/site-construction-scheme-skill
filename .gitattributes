@@ -10,3 +10,6 @@
 *.xlsx filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.dwg filter=lfs diff=lfs merge=lfs -text
+# Small public bidding templates travel in ordinary clones and ZIP downloads.
+skills/bidding-construction-scheme/assets/format_reference_20261023.docx -filter -diff -merge -text
+skills/bidding-construction-scheme/assets/template_construction_organization_20261023.docx -filter -diff -merge -text

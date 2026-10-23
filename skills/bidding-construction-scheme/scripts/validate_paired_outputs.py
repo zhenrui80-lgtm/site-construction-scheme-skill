@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Validate the paired DOCX/WPS and five-sheet XLSX construction-bid delivery."""
+"""Validate paired DOCX/WPS and five-sheet XLSX identity, integrity, and schedule.
+
+Expandable template structure requires a separate profile-format auditor; this
+checker records structural changes but does not certify fonts or layout.
+"""
 
 from __future__ import annotations
 
@@ -84,14 +88,31 @@ def main() -> None:
     parser.add_argument("--wps", type=Path, help="Optional WPS-format copy; only existence/size is checked")
     parser.add_argument("--template", type=Path)
     parser.add_argument("--expected-template-sha256")
+    parser.add_argument(
+        "--structure-policy",
+        choices=("fixed", "expandable"),
+        default="fixed",
+        help="fixed requires equal template/output paragraph, table, and section counts; expandable requires --template, records count deltas, and requires a separate profile-format audit",
+    )
     parser.add_argument("--expected-boq-items", type=int)
     parser.add_argument("--stale", action="append", default=[])
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
+    if args.structure_policy == "expandable" and args.template is None:
+        parser.error("--structure-policy expandable requires --template")
 
     failures: list[str] = []
     warnings: list[str] = []
-    report: dict = {"project": args.project, "days": args.days}
+    report: dict = {
+        "project": args.project,
+        "days": args.days,
+        "structure_policy": args.structure_policy,
+        "profile_format_audit_required": args.structure_policy == "expandable",
+    }
+    if args.structure_policy == "expandable":
+        warnings.append("expandable structure is not a formatting approval; run the selected profile-format auditor separately")
+        if not args.expected_template_sha256:
+            warnings.append("template fingerprint is recorded but not verified against an expected SHA-256")
 
     docx = args.docx.expanduser().resolve()
     xlsx = args.xlsx.expanduser().resolve()
@@ -138,11 +159,19 @@ def main() -> None:
                     "paragraphs": len(template_doc.paragraphs),
                     "tables": len(template_doc.tables),
                     "sections": len(template_doc.sections),
+                    "fingerprint_verified": bool(
+                        args.expected_template_sha256
+                        and template_hash == args.expected_template_sha256.upper()
+                    ),
                 }
                 if args.expected_template_sha256 and template_hash != args.expected_template_sha256.upper():
-                    failures.append("template SHA-256 differs from the expected fixed-template fingerprint")
+                    failures.append("template SHA-256 differs from the expected template fingerprint")
+                report["template"]["count_deltas"] = {
+                    key: report["docx"][key] - report["template"][key]
+                    for key in ("paragraphs", "tables", "sections")
+                }
                 for key in ("paragraphs", "tables", "sections"):
-                    if report["docx"][key] != report["template"][key]:
+                    if args.structure_policy == "fixed" and report["docx"][key] != report["template"][key]:
                         failures.append(
                             f"DOCX {key} {report['docx'][key]} != template {report['template'][key]}"
                         )

@@ -47,6 +47,10 @@ Use the `documents` skill for DOCX work, the `spreadsheets` skill for BOQ work, 
 
 Use a project contract as the single machine-readable source of truth. Initialize every new working directory with `scripts/init_project.py`, then update `project-contract.json` after inspecting the BOQ, drawings, source scheme, and template. Project builders may import `scripts/docx_builder.py` and `scripts/project_contract.py`; they must never import or dynamically load another project's `build_scheme.py`, `PREVIOUS_UTILS`, `BASE_BUILDER`, or an absolute script path below a prior `work` directory.
 
+## Efficient execution without changing the delivery contract
+
+Keep every source-inspection, template, evidence, depth, approval, and release requirement below. Before extraction, use [execution coordination](references/execution-coordination.md) to reuse a traceable intake and split genuinely independent work. Short edits may stay serial; use available subagents for substantial independent work packages, with separate draft/report paths and one final artifact writer. If delegation is unavailable, follow the same dependencies serially. No model configuration or new tool API is required.
+
 ## Workflow
 
 ### 1. Intake And Protect Sources
